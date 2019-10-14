@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Edit Remove HTML Table Row</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" type="text/css" href="CSSEins.css" media="screen" />
+
+    </head>
+    <body>
+      <h1>Your Closet</h1>
+      <h2>Übersicht</h2>
+
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>Name</th>
+                        <th>Marke</th>
+                        <th>Farbe</th>
+                        <th>Material</th>
+                        <th>Kategorie</th>
+                    </tr>
+                    <tr>
+                        <td>Lieblingspulli</td>
+                        <td>H&M</td>
+                        <td>blue</td>
+                        <td>Baumwolle</td>
+                        <td>Oberteile</td>
+                    </tr>
+                    <tr>
+                      <td>Lieblingspulli</td>
+                      <td>H&M</td>
+                      <td>blue</td>
+                      <td>Baumwolle</td>
+                      <td>Oberteile</td>
+                    </tr>
+                    <tr>
+                      <td>Hose mit Löchern</td>
+                      <td>H&M</td>
+                      <td>blue</td>
+                      <td>Jeans</td>
+                      <td>Hosen</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab tab-2">
+                Name :<input type="text" name="name" id="name">
+                Marke :<input type="text" name="lname" id="lname">
+                Farbe :<input type="text" name="farbe" id="farbe">
+                Material:<input type="text" name="material" id="material">
+                Kategorie:<input type="text" name="material" id="kategorie">
+
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button onclick="removeSelectedRow();">Remove</button>
+            </div>
+        </div>
+
+        <script>
+
+            var rIndex,
+                table = document.getElementById("table");
+
+            // check the empty input
+            function checkEmptyInput()
+            {
+                var isEmpty = false,
+                    name = document.getElementById("name").value,
+                    lname = document.getElementById("lname").value,
+                    farbe = document.getElementById("farbe").value;
+                    material = document.getElementById("material").value;
+                    kategorie = document.getElementById("kategorie").value;
+
+                if(name === ""){
+                    alert("Name Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(lname === ""){
+                    alert("Last Name Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(farbe === ""){
+                    alert("Farbe Connot Be Empty");
+                    isEmpty = true;
+                }
+                return isEmpty;
+            }
+
+            // add Row
+            function addHtmlTableRow()
+            {
+                // get the table by id
+                // create a new row and cells
+                // get value from input text
+                // set the values into row cell's
+                if(!checkEmptyInput()){
+                var newRow = table.insertRow(table.length),
+                    cell1 = newRow.insertCell(0),
+                    cell2 = newRow.insertCell(1),
+                    cell3 = newRow.insertCell(2),
+                    cell4 = newRow.insertCell(3),
+                    cell5 = newRow.insertCell(4),
+                    name = document.getElementById("name").value,
+                    lname = document.getElementById("lname").value,
+                    farbe = document.getElementById("farbe").value;
+                    material = document.getElementById("material").value;
+                    kategorie = document.getElementById("kategorie").value;
+
+                cell1.innerHTML = name;
+                cell2.innerHTML = lname;
+                cell3.innerHTML = farbe;
+                cell4.innerHTML = material;
+                cell5.innerHTML = kategorie;
+                // call the function to set the event to the new row
+                selectedRowToInput();
+            }
+            }
+
+            // display selected row data into input text
+            function selectedRowToInput()
+            {
+
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                      // get the seected row index
+                      rIndex = this.rowIndex;
+                      document.getElementById("name").value = this.cells[0].innerHTML;
+                      document.getElementById("lname").value = this.cells[1].innerHTML;
+                      document.getElementById("farbe").value = this.cells[2].innerHTML;
+                      document.getElementById("material").value = this.cells[3].innerHTML;
+                      document.getElementById("kategorie").value = this.cells[4].innerHTML;
+                    };
+                }
+            }
+            selectedRowToInput();
+
+            function editHtmlTbleSelectedRow()
+            {
+                var name = document.getElementById("name").value,
+                    lname = document.getElementById("lname").value,
+                    farbe = document.getElementById("farbe").value;
+                    material = document.getElementById("material").value;
+                    kategorie = document.getElementById("kategorie").value;
+
+               if(!checkEmptyInput()){
+                table.rows[rIndex].cells[0].innerHTML = name;
+                table.rows[rIndex].cells[1].innerHTML = lname;
+                table.rows[rIndex].cells[2].innerHTML = farbe;
+                table.rows[rIndex].cells[3].innerHTML = material;
+                table.rows[rIndex].cells[4].innerHTML = kategorie;
+              }
+            }
+
+            function removeSelectedRow()
+            {
+                table.deleteRow(rIndex);
+                // clear input text
+                document.getElementById("name").value = "";
+                document.getElementById("lname").value = "";
+                document.getElementById("farbe").value = "";
+                document.getElementById("material").value="";
+                document.getElementById("material").value="";
+            }
+        </script>
+
+    </body>
+</html>
