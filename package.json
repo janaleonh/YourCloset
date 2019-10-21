@@ -1,0 +1,33 @@
+{
+  "name": "yourcloset",
+  "version": "1.0.0",
+  "description": "eine benutzerfreundliche app zur verwatung deines kleiderschrankes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janaleonh/YourCloset.git"
+  },
+  "keywords": [
+    "Browser",
+    "App",
+    "Single",
+    "Page",
+    "App",
+    "Closet",
+    "Wardrobe",
+    "Kleiderschrank",
+    "clothes",
+    "Klamotten",
+    "shoes",
+    "Schuhe"
+  ],
+  "author": "Stefanie Braun",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/janaleonh/YourCloset/issues"
+  },
+  "homepage": "https://github.com/janaleonh/YourCloset#readme"
+}
