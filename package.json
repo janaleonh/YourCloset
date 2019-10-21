@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/janaleonh/YourCloset/issues"
   },
-  "homepage": "https://github.com/janaleonh/YourCloset#readme"
+  "homepage": "https://github.com/janaleonh/YourCloset#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }
