@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YourCloset - Übersicht</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" type="text/css" href="theme.css" media="screen" />
+          <link rel="stylesheet" type="text/css" href="uebersicht.css" media="screen" />
+          <script src="script.js" async></script>
+
+    </head>
+    <body>
+      <section id="app">
+        <header>
+          <div class="logo">
+            <img src="YourCloset_Header.png" alt="" id="YourCloset_Header">
+                <hr>
+          </div>
+          <div class="headerIndividuell">
+            <h1>Übersicht</h1>
+              <hr>
+
+          </div>
+        </header>
+        <main>
+
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>Name</th>
+                        <th>Marke</th>
+                        <th>Farbe</th>
+                        <th>Material</th>
+                        <th>Kategorie</th>
+                        <th>✓</th>
+                    </tr>
+                    <tr>
+                        <td>Lieblingspulli</td>
+                        <td>H&M</td>
+                        <td>blue</td>
+                        <td>Baumwolle</td>
+                        <td>Oberteile</td>
+                        <td class= "radioSpalte" > <input type="checkbox" id="scales" name="scales" </td>
+                    </tr>
+                    <tr>
+                        <td>Lieblingspulli</td>
+                        <td>H&M</td>
+                        <td>blue</td>
+                        <td>Baumwolle</td>
+                        <td>Oberteile</td>
+                        <td class= "radioSpalte" > <input type="checkbox" id="scales" name="scales" </td>
+
+                    </tr>
+                    <tr>
+                        <td>Hose mit Löchern</td>
+                        <td>H&M</td>
+                        <td>blue</td>
+                        <td>Jeans</td>
+                        <td>Hosen</td>
+                      <td class= "radioSpalte" > <input type="checkbox" id="scales" name="scales" </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tab tab-2">
+
+                <button id="hinButton" onclick=>Hinzufügen</button>
+                <button id="bearbButton" onclick=>Bearbeiten</button>
+                <button id="loeschButton" onclick=>Löschen</button>
+
+
+            </div>
+
+        </div>
+        </main>
+  </section>
+    </body>
+</html>

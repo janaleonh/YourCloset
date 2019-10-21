@@ -1,0 +1,28 @@
+html{
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #030310;
+}
+
+ #YourCloset_Header{
+   width: 42vw;
+   margin-left: 29vw;
+
+}
+.headerIndividuell{
+  text-align: center;
+  margin-top: 0vw;
+}
+
+h1{
+  font-weight: lighter;
+  font-size: 2vw;
+}
+
+hr{
+  border:  0.1px solid #eeeeee;
+}
+
+table{
+  border-collapse: collapse;
+}

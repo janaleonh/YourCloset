@@ -1,0 +1,59 @@
+
+#uebersichtHeader{
+text-align: center;
+
+}
+
+table{
+width: 90VW;
+margin: 5vw;
+align-items: center;
+
+
+}
+
+
+th{
+  font-size: 1.5vw;
+  font-weight: lighter;
+
+}
+td{
+  font-size: 1vw;
+  height: 1.5vw;
+
+}
+
+.radioSpalte{
+  text-align: center;
+}
+
+
+input{
+  align-items: center;
+}
+.actions{
+align-items: center;
+
+
+}
+
+#hinButton{
+margin-left: 35vw;
+font-size: 1vw;
+color: #030310;
+
+}
+
+#bearbButton{
+  font-size: 1vw;
+  color: #030310;
+
+
+}
+#loeschButton{
+  margin-right: 10vw;
+  font-size: 1vw;
+  color: #030310;
+
+}
