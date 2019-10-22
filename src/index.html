@@ -6,7 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
           <link rel="stylesheet" type="text/css" href="uebersicht.css" media="screen" />
+          <link rel="stylesheet" type="text/css" href="hinzufuegen.css" media="screen" />
           <script src="index.js"></script>
+          <script src="uebersicht.js"></script>
+          <script src="app.js"></script>
+          <script src="hinzufuegen.js"></script>
 
     </head>
     <body>
@@ -18,6 +22,9 @@
         </header>
         <main>
         </main>
+      </section>
+      <section id=startSection>
+        <button id="startButton" onclick="startButton()">Jetzt starten</button>
       </section>
       <section id="uebersicht" class="hidden">
             <header>
@@ -70,9 +77,9 @@
 
                 <div class="tab tab-2">
 
-                    <button id="hinButton" onclick=>Hinzufügen</button>
-                    <button id="bearbButton" onclick=>Bearbeiten</button>
-                    <button id="loeschButton" onclick=>Löschen</button>
+                    <button id="hinButton" onclick="hinzuUebersichtButton()">Hinzufügen</button>
+                    <button id="bearbButton" onclick="bearbUebersichtButton()">Bearbeiten</button>
+                    <button id="loeschButton" onclick="loeschUebersichtButton()">Löschen</button>
 
 
                 </div>
@@ -85,12 +92,7 @@
 
       <section id="hinzufuegen" class="hidden">
           <header>
-            <div class="logo">
-                <link rel="stylesheet" type="text/css" href="hinzufuegen.css" media="screen" />
 
-              <img src="YourCloset_Header.png" alt="" id="YourCloset_Header">
-                  <hr>
-            </div>
             <div class="headerIndividuell">
               <h1>Hinzufügen</h1>
                 <hr>
@@ -146,6 +148,9 @@
                   <div id="bereich">
                       Passt zu: <br>
                       <textarea id="input2" cols="67" rows="11"></textarea>
+                  </div>
+                  <div>
+                    <button id="speicherHinzufuegen" onclick="speicherHinzuButton()">Speichern</button>
                   </div>
               </div>
           </main>
