@@ -1,62 +1,4 @@
 
-#uebersichtHeader{
-text-align: center;
-
-}
-
-#uebersicht table{
-width: 90VW;
-margin: 5vw;
-align-items: center;
-}
-
-
-#uebersicht th{
-  font-size: 1.5vw;
-  font-weight: lighter;
-
-}
-#uebersicht td{
-  font-size: 1vw;
-  height: 1.5vw;
-
-}
-
-#uebersicht.radioSpalte{
-  text-align: center;
-}
-
-
-#uebersicht input{
-  align-items: center;
-}
-#uebersicht.actions{
-align-items: center;
-
-
-}
-
-#hinButton{
-margin-left: 35vw;
-font-size: 1vw;
-color: #030310;
-
-}
-
-#bearbButton{
-  font-size: 1vw;
-  color: #030310;
-
-
-}
-#loeschButton{
-  margin-right: 10vw;
-  font-size: 1vw;
-  color: #030310;
-
-}
-
-
  #YourCloset_Header{
    width: 42vw;
    margin-left: 29vw;
@@ -76,9 +18,6 @@ hr{
   border:  0.1px solid #eeeeee;
 }
 
-table{
-  border-collapse: collapse;
-}
 
 
 #bereich{
@@ -86,7 +25,8 @@ table{
     border: 3px black solid;
     width: 500px;
     height: 200px;
-    margin-left: 20px;
+    margin-left:265px;
+
 }
 
 #hinzufuegen .input1{
@@ -107,11 +47,12 @@ table{
 }
 
 #außenrum td{
-    padding: 20px;
+    padding-left: 120px;
 }
 
 #table2{
     border-style: none;
+
 }
 
 #table2 td{
@@ -121,4 +62,29 @@ table{
 
 #table2 tr{
     height: 30px;
+}
+
+#speicherHinzufuegen {
+    margin-left: 265px;
+}
+
+@media screen and (min-width: 768px) {
+    body,
+    input {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body,
+    input {
+        font-size: 13pt;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body,
+    input {
+        font-size: 14pt;
+    }
 }
