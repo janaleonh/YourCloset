@@ -7,6 +7,8 @@ import Navigo from "navigo/lib/navigo.js";
 
 
 import Uebersicht from "./uebersicht/uebersicht.js";
+import Hinzufuegen from "./hinzufuegen/hinzufuegen.js";
+import Startpage from "./startpage/startpage.js";
 
 
 
@@ -22,12 +24,12 @@ class App {
     this._router = new Navigo();
     this._currentUrl = "";
     this._navAborted = false;
-    this._db = new DB();
+
 
     this._router.on({
       "*":                    () => this.showStartPage(),
       "/":                    () => this.showStartPage(),
-      "uebersicht":            () => this.showUebersicht(),
+      "/uebersicht":            () => this.showUebersicht(),
 
     });
 
@@ -50,7 +52,7 @@ class App {
     this._router.resolve();
   }
 
-  showStartPage() {
+  showStartpage() {
     let view = new startpage(this);
     this._switchVisibleView(view);
   }
@@ -65,13 +67,11 @@ class App {
 
   _switchVisibleView(view) {
     let newUrl = this._router.lastRouteResolved().url;
-    console.log(newUrl);
     let goon = () => {
       this._router.navigate(newUrl + "?goon");
     }
 
     if(this._currentView && !this._currentView.onLeave(goon)) {
-      console.log("Navigation aborted");
       this._navAborted = true;
       return false;
     }
@@ -116,7 +116,6 @@ class App {
     }
     // Navigo an die Links in der View binden
     this._router.updatePageLinks();
-    console.log("Page Links Updated");
     //end of _switchVisibleContent
   }
 }

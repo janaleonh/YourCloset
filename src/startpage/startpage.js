@@ -36,12 +36,10 @@ class Startpage {
   get title() {
     return "Startpage";
   }
-}
 
-startButton(){
-  showUebersicht();
-}
 
+
+}
 
 
 export default startpage;
