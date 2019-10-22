@@ -3,3 +3,7 @@ function hinzuUebersichtButton() {
   document.getElementById("hinzufuegen").classList.remove("hidden");
 
 }
+
+function loeschUebersichtButton(){
+  table.deleteRow();
+}
