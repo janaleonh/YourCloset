@@ -10,7 +10,7 @@ class Uebersicht {
   constructor(app) {
     this._app = app;
     _app = this._app;
-    _db = app._db;
+
   }
 
   onShow() {
@@ -40,4 +40,4 @@ class Uebersicht {
 
 
 
-export default uebersicht;
+export default Uebersicht;

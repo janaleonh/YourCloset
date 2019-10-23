@@ -10,12 +10,13 @@ class Hinzufuegen {
   constructor(app) {
     this._app = app;
     _app = this._app;
-    _db = app._db;
+
   }
 
   onShow() {
     // Anzuzeigende HTML-Elemente ermitteln
     let section = document.querySelector("#hinzufuegen").cloneNode(true);
+
 
 
     return {
@@ -40,4 +41,4 @@ class Hinzufuegen {
 
 
 
-export default hinzufuegen;
+export default Hinzufuegen;

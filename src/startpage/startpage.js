@@ -10,7 +10,7 @@ class Startpage {
   constructor(app) {
     this._app = app;
     _app = this._app;
-    _db = app._db;
+
   }
 
   onShow() {
@@ -42,4 +42,4 @@ class Startpage {
 }
 
 
-export default startpage;
+export default Startpage;

@@ -27,9 +27,11 @@ class App {
 
 
     this._router.on({
-      "*":                    () => this.showStartPage(),
-      "/":                    () => this.showStartPage(),
+      "*":                    () => this.showStartpage(),
+      "/":                    () => this.showStartpage(),
       "/uebersicht":            () => this.showUebersicht(),
+      "/hinzufuegen":         () => this.showHinzufuegen(),
+      "/start":               () => this.showStartpage(),
 
     });
 
@@ -53,10 +55,9 @@ class App {
   }
 
   showStartpage() {
-    let view = new startpage(this);
+    let view = new Startpage(this);
     this._switchVisibleView(view);
   }
-
 
 
   showUebersicht() {
@@ -64,6 +65,11 @@ class App {
     this._switchVisibleView(view);
   }
 
+  showHinzufuegen() {
+    console.log("hinzufügen");
+    let view = new Hinzufuegen(this);
+    this._switchVisibleView(view);
+  }
 
   _switchVisibleView(view) {
     let newUrl = this._router.lastRouteResolved().url;
