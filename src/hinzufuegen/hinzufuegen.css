@@ -8,10 +8,6 @@ h1{
   font-size: 2vw;
 }
 
-hr{
-  border:  0.1px solid #eeeeee;
-}
-
 
 #bereich{
     background-color: rgba(247,205,204,0.5);
@@ -31,6 +27,8 @@ hr{
 #inputPasstZu{
     background-color: rgba(247,205,204,0);
     border-style: none;
+    width: 50vw;
+    height: 23vw;
 }
 /*
 #Dirndl{
@@ -54,7 +52,6 @@ hr{
 
 #table2 td{
     border-style: none;
-
 }
 
 #table2 tr{
@@ -64,6 +61,7 @@ hr{
 #speicherHinzufuegen{
     margin-left: 25vw;
     margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 
 @media screen and (max-width: 400px) {
