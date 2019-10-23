@@ -5,7 +5,7 @@
 
 h1{
   font-weight: lighter;
-  font-size: 2vw;
+ /* font-size: 2vw;*/
 }
 
 
@@ -46,8 +46,8 @@ h1{
     width: 55vw;
     margin-left: 25vw;
     margin-top: 5vw;
-    margin-bottom: 2vw;
-    font-size: 1.5vw;
+    margin-bottom: 4vw;
+    /*font-size: 1.5vw;*/
 }
 
 #table2 td{
@@ -66,11 +66,89 @@ h1{
 
 @media screen and (max-width: 400px) {
     #table2{
+        width: 100vw;
+        margin-left: 0vw;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+        /*font-size: 2vw;*/
+    }
+
+    .hinzufuegen #bereich{
+        margin-left: 0vw;
+        width: 100vw;
+    }
+
+    .inputEingabe{
+        width: 25vw;
+    }
+
+    #speicherHinzufuegen{
+        margin-left: 0vw;
+    }
+
+    #speicherHinzuButtonDIV{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #table2{
         width: 80vw;
         margin-left: 10vw;
         margin-top: 5vw;
         margin-bottom: 2vw;
-        font-size: 2vw;
+        /*font-size: 2vw;*/
     }
 
+    #table2 tr{
+        height: 5vw;
+    }
+
+    .hinzufuegen #bereich{
+        margin-left: 10vw;
+        width: 80vw;
+    }
+
+    .inputEingabe{
+        width: 25vw;
+    }
+
+    #speicherHinzufuegen{
+        margin-left: 0vw;
+    }
+
+    #speicherHinzuButtonDIV{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 771px) {
+    #table2{
+        width: 80vw;
+        margin-left: 15vw;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+        /*font-size: 2vw;*/
+    }
+
+    #table2 tr{
+        height: 5vw;
+    }
+
+    .hinzufuegen #bereich{
+        margin-left: 15vw;
+        width: 72vw;
+    }
+
+    .inputEingabe{
+        width: 20vw;
+    }
+
+    #speicherHinzufuegen{
+        margin-left: 3vw;
+    }
+
+    #speicherHinzuButtonDIV{
+        text-align: center;
+    }
 }
