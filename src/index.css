@@ -6,7 +6,7 @@
  * Damit @import funktioniert, muss die Anweisung vor allen anderen
  * CSS-Anweisungen stehen. Dieses Stylesheet muss daher auch vor allen
  * anderen importiert werden.
- */
+*/
 
 html{
   font-family: sans-serif;
