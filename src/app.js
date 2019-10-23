@@ -2,10 +2,7 @@
 /*Main Class of Application*/
 
 import stylesheet from "./app.css";
-
 import Navigo from "navigo/lib/navigo.js";
-
-
 import Uebersicht from "./uebersicht/uebersicht.js";
 import Hinzufuegen from "./hinzufuegen/hinzufuegen.js";
 import Startpage from "./startpage/startpage.js";
@@ -61,6 +58,7 @@ class App {
 
 
   showUebersicht() {
+    console.log("übersicht");
     let view = new Uebersicht(this);
     this._switchVisibleView(view);
   }

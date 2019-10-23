@@ -4,30 +4,30 @@ text-align: center;
 
 }
 
-#uebersicht table{
-width: 90VW;
+.uebersicht table{
+width: 90vw;
 margin: 5vw;
 align-items: center;
 }
 
 
-#uebersicht th{
+.uebersicht th{
   font-size: 1.5vw;
   font-weight: lighter;
 
 }
-#uebersicht td{
+.uebersicht td{
   font-size: 1vw;
   height: 1.5vw;
 
 }
 
-#uebersicht.radioSpalte{
+.uebersicht.radioSpalte{
   text-align: center;
 }
 
 
-#uebersicht input{
+.uebersicht input{
   align-items: center;
 }
 #uebersicht.actions{
