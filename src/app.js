@@ -6,6 +6,7 @@ import Navigo from "navigo/lib/navigo.js";
 import Uebersicht from "./uebersicht/uebersicht.js";
 import Hinzufuegen from "./hinzufuegen/hinzufuegen.js";
 import Startpage from "./startpage/startpage.js";
+import DB from "./database.js";
 
 
 
