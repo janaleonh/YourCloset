@@ -26,7 +26,8 @@
 
 
         <div class="">
-        <a  href="/uebersicht" navigo> <button type="button" name="button" >Übersicht</button> </a>
+        <a  href="/uebersicht" navigo> <button type="button" name="uebersichtButton" id="uebersichtButton">Übersicht</button> </a>
+
         </div>
         </main>
         <footer></footer>
@@ -60,7 +61,7 @@
                             <td>blue</td>
                             <td>Baumwolle</td>
                             <td>Oberteile</td>
-                            <td class= "radioSpalte" > <input type="checkbox" id="scales" name="scales" </td>
+                            <td class= "radioSpalte" > <input type="radio" id="scales" name="scales" </td>
                         </tr>
                         <tr>
                             <td>Lieblingspulli</td>
@@ -68,7 +69,7 @@
                             <td>blue</td>
                             <td>Baumwolle</td>
                             <td>Oberteile</td>
-                            <td class= "radioSpalte" > <input type="checkbox" id="scales" name="scales" </td>
+                            <td class= "radioSpalte" > <input type="radio" id="scales" name="scales" </td>
 
                         </tr>
                         <tr>
@@ -77,17 +78,16 @@
                             <td>blue</td>
                             <td>Jeans</td>
                             <td>Hosen</td>
-                          <td class= "radioSpalte" > <input type="checkbox" id="scales" name="scales" </td>
+                          <td class= "radioSpalte" > <input type="radio" id="scales" name="scales" </td>
                         </tr>
                     </table>
                 </div>
 
                 <div class="tab tab-2">
 
-                    <a  href="/hinzufuegen" navigo> <button id="hinButton">Hinzufügen</button> </a>
+                    <!<a  href="/hinzufuegen" navigo> <button id="hinButton">Hinzufügen</button> </a>
                     <button id="bearbButton" onclick="bearbUebersichtButton()">Bearbeiten</button>
                     <button id="loeschButton" onclick="loeschUebersichtButton()">Löschen</button>
-
 
                 </div>
 
@@ -144,6 +144,8 @@
                       </tr>
 
                   </table>
+
+
                   </td>
                   <td>
                       <img src="" alt="+" id="Dirndl"/>

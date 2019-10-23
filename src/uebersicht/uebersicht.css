@@ -36,25 +36,6 @@ align-items: center;
 
 }
 
-#hinButton{
-margin-left: 35vw;
-font-size: 1vw;
-color: #030310;
-
-}
-
-#bearbButton{
-  font-size: 1vw;
-  color: #030310;
-
-
-}
-#loeschButton{
-  margin-right: 10vw;
-  font-size: 1vw;
-  color: #030310;
-
-}
 
 
  #YourCloset_Header{
@@ -78,47 +59,4 @@ hr{
 
 table{
   border-collapse: collapse;
-}
-
-
-#bereich{
-    background-color: lightgrey;
-    border: 3px black solid;
-    width: 500px;
-    height: 200px;
-    margin-left: 20px;
-}
-
-#input1{
-    border-style: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-}
-
-#input2{
-    background-color: lightgrey;
-    border-style: none;
-
-}
-
-#Dirndl{
-    width: 80px;
-    height: 80px;
-}
-
-#außenrum td{
-    padding: 20px;
-}
-
-#table2{
-    border-style: none;
-}
-
-#table2 td{
-    border-style: none;
-    padding: 5px;
-}
-
-#table2 tr{
-    height: 30px;
 }
