@@ -22,8 +22,10 @@ align-items: center;
 
 }
 
-.uebersicht.radioSpalte{
-  text-align: center;
+.radioSpalte{
+
+  text-align: center; /* center checkbox horizontally */
+  vertical-align: middle; /
 }
 
 
@@ -36,7 +38,9 @@ align-items: center;
 
 }
 
-
+.buttonsUebersicht{
+  text-align: center; /* center checkbox horizontally */
+}
 
  #YourCloset_Header{
    width: 42vw;
