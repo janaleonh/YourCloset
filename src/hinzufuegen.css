@@ -25,7 +25,7 @@ hr{
     border: 3px black solid;
     width: 500px;
     height: 200px;
-    margin-left:265px;
+    margin-left:385px;
 
 }
 
@@ -47,7 +47,7 @@ hr{
 }
 
 #außenrum td{
-    padding-left: 120px;
+    padding-left: 180px;
 }
 
 #table2{
@@ -65,7 +65,7 @@ hr{
 }
 
 #speicherHinzufuegen {
-    margin-left: 265px;
+    margin-left: 385px;
 }
 
 @media screen and (min-width: 768px) {
