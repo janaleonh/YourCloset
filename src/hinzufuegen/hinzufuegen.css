@@ -18,8 +18,8 @@ table{
 
 
 #bereich{
-    background-color: lightgrey;
-    border: 3px black solid;
+    background-color: rgba(247,205,204,0.5);
+    border: 1px grey solid;
     width: 50vw;
     height: 25vw;
     margin-left: 25vw;
@@ -33,7 +33,7 @@ table{
 }
 
 #inputPasstZu{
-    background-color: lightgrey;
+    background-color: rgba(247,205,204,0);
     border-style: none;
 }
 /*
@@ -63,4 +63,15 @@ table{
 
 #table2 tr{
     height: 3vw;
+}
+
+
+@media screen and (max-width: 400px) {
+    #table2{
+        border-style: none;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+    }
 }
