@@ -10,9 +10,6 @@ import DB from "./database.js";
 
 
 
-
-
-
 class App {
   constructor() {
     this._title = "YourCloset";
