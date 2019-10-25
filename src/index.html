@@ -23,21 +23,36 @@
 
         </header>
         <main>
+          <div id="hi">
+            Herzlich Willkommen bei Your Closet!
+
+          </div>
+          <div class="startText">
+            Starte jetzt und erstelle deinen virtuellen Kleiderschrank
+
+          </div>
 
 
-        <div class="">
-        <a  href="/uebersicht" navigo> <button type="button" name="uebersichtButton" id="uebersichtButton">Übersicht</button> </a>
-
+        <div class="startButton">
+        <a  href="/uebersicht" navigo> <button type="button" name="uebersichtButton" id="uebersichtButton">Start</button> </a>
         </div>
+
+
         </main>
         <footer></footer>
       </section>
 
       <section id="uebersicht" class="hidden">
             <header>
+              <div class="nav">
+                  <a href="/uebersicht" data-navigo>
+              </div>
+
               <div class="headerIndividuell">
+
                 <h1>Übersicht</h1>
-                <a href="/uebersicht" data-navigo>
+
+
                   <hr>
 
               </div>
@@ -61,7 +76,7 @@
                             <td>blue</td>
                             <td>Baumwolle</td>
                             <td>Oberteile</td>
-                            <td class= "radioSpalte" > <input type="radio" id="radio1" name="scales" </td>
+                            <td class= "radioSpalte" > <input type="checkbox" id="check1" name="scales" </td>
                         </tr>
                         <tr>
                             <td>Lieblingspulli</td>
@@ -69,7 +84,7 @@
                             <td>blue</td>
                             <td>Baumwolle</td>
                             <td>Oberteile</td>
-                            <td class= "radioSpalte" > <input type="radio" id="radio2" name="scales" </td>
+                            <td class= "radioSpalte" > <input type="checkbox" id="check2" name="scales" </td>
 
                         </tr>
                         <tr>
@@ -78,15 +93,15 @@
                             <td>blue</td>
                             <td>Jeans</td>
                             <td>Hosen</td>
-                          <td class= "radioSpalte" > <input type="radio" id="radio3" name="scales" </td>
+                          <td class= "radioSpalte" > <input type="checkbox" id="check3" name="scales" </td>
                         </tr>
                     </table>
                 </div>
 
                 <div class="buttonsUebersicht">
 
-                    <a  href="/hinzufuegen" navigo> <button id="hinButton">Hinzufügen</button> </a>
-                    <button id="bearbButton" >Bearbeiten</button>
+                    <a  href="/hinzufuegen" navigo> <button id="hinButton">Hinzufügen</button></a>
+
                     <button id="loeschButton">Löschen</button>
 
                 </div>
