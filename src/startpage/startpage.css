@@ -20,7 +20,12 @@
 }
 
 #uebersichtButton{
-  background-image: url(Button_Hintergrund.png);
+  background-color: white;
+  background-image: url(buttonHintergrund.png);
+  background-size: 99%;
+  border: none;
+  width: 5vw;
+  height: 2vw;
   animation: uebersichtButtonAnimation 1s ease-in-out both 0.8s;
 }
 
@@ -35,7 +40,7 @@
   }
 
 }
-#hi {
+#willkommenText {
   text-align: center;
     font-size: 3vw%;
   animation: textwelle 1s ease-in-out both 0.8s;
