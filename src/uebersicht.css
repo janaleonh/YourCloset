@@ -85,34 +85,6 @@ table{
   border-collapse: collapse;
 }
 
-#profilHeader{
-  text-align: center;
-  }
-
-  .meta-data-box{
-    border: solid 1px;
-    height: 10em;
-    width: 15em;
-    margin: 3em 3em 3em 3em;
-    padding: 1em;
-    float: left;
-  }
-
-  .additional-info-box{
-    border: solid 1px;
-    height: 10em;
-    width: 15em;
-    margin:  3em 3em 3em 3em;
-    padding: 1em;
-    float: right;
-  }
-
-  .fits-box{
-    border: solid 1px;
-    height: 10em;
-    margin:  3em;
-    padding: 1em;
-  }
 #bereich{
     background-color: lightgrey;
     border: 3px black solid;
