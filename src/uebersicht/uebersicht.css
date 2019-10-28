@@ -1,0 +1,62 @@
+
+#uebersichtHeader{
+text-align: center;
+
+}
+
+.uebersicht table{
+width: 90vw;
+margin: 5vw;
+align-items: center;
+}
+
+
+.uebersicht th{
+  /*font-size: 1.5vw;*/
+  font-weight: lighter;
+
+}
+.uebersicht td{
+  /*font-size: 1vw;*/
+  height: 1.5vw;
+
+}
+
+.radioSpalte{
+
+  text-align: center; /* center checkbox horizontally */
+  vertical-align: middle;
+}
+
+
+.uebersicht input{
+  align-items: center;
+}
+#uebersicht.actions{
+align-items: center;
+
+
+}
+
+.buttonsUebersicht{
+  text-align: center; /* center checkbox horizontally */
+}
+
+
+.headerIndividuell{
+  text-align: center;
+  margin-top: 0vw;
+}
+
+h1{
+  font-weight: lighter;
+  /*font-size: 2vw;*/
+}
+
+hr{
+  border:  0.1px solid #eeeeee;
+}
+
+table{
+  border-collapse: collapse;
+}

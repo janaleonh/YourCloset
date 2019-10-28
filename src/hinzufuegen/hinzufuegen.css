@@ -1,0 +1,154 @@
+.headerIndividuell{
+  text-align: center;
+  margin-top: 0vw;
+}
+
+h1{
+  font-weight: lighter;
+ /* font-size: 2vw;*/
+}
+
+
+#bereich{
+    background-color: rgba(247,205,204,0.5);
+    border: 1px grey solid;
+    width: 50vw;
+    height: 25vw;
+    margin-left: 25vw;
+}
+
+
+.inputEingabe{
+    border-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+#inputPasstZu{
+    background-color: rgba(247,205,204,0);
+    border-style: none;
+    width: 50vw;
+    height: 23vw;
+}
+/*
+#Dirndl{
+    width: 10vw;
+    height: 10vw;
+}
+
+
+#außenrum td{
+    padding: 15vw;
+}*/
+
+#table2{
+    border-style: none;
+    width: 55vw;
+    margin-left: 25vw;
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+    /*font-size: 1.5vw;*/
+}
+
+#table2 td{
+    border-style: none;
+}
+
+#table2 tr{
+    height: 3vw;
+}
+
+#speicherHinzufuegen{
+    margin-left: 25vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+@media screen and (max-width: 400px) {
+    #table2{
+        width: 100vw;
+        margin-left: 0vw;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+        /*font-size: 2vw;*/
+    }
+
+    .hinzufuegen #bereich{
+        margin-left: 0vw;
+        width: 100vw;
+    }
+
+    .inputEingabe{
+        width: 25vw;
+    }
+
+    #speicherHinzufuegen{
+        margin-left: 0vw;
+    }
+
+    #speicherHinzuButtonDIV{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #table2{
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+        /*font-size: 2vw;*/
+    }
+
+    #table2 tr{
+        height: 5vw;
+    }
+
+    .hinzufuegen #bereich{
+        margin-left: 10vw;
+        width: 80vw;
+    }
+
+    .inputEingabe{
+        width: 25vw;
+    }
+
+    #speicherHinzufuegen{
+        margin-left: 0vw;
+    }
+
+    #speicherHinzuButtonDIV{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 771px) {
+    #table2{
+        width: 80vw;
+        margin-left: 15vw;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+        /*font-size: 2vw;*/
+    }
+
+    #table2 tr{
+        height: 5vw;
+    }
+
+    .hinzufuegen #bereich{
+        margin-left: 15vw;
+        width: 72vw;
+    }
+
+    .inputEingabe{
+        width: 20vw;
+    }
+
+    #speicherHinzufuegen{
+        margin-left: 3vw;
+    }
+
+    #speicherHinzuButtonDIV{
+        text-align: center;
+    }
+}

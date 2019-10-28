@@ -1,199 +1,182 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>YourCloset - Übersicht</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script src="index.js"></script>
 
-<head>
-  <title>YourCloset - Übersicht</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="uebersicht.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="profil.css" media="screen" />
-  <script src="index.js"></script>
+    </head>
+    <body>
+      <section id=app>
+        <header>
+          <div class="logo">
+            <a  href="/uebersicht" navigo><img src="YourCloset_Header.png" alt="" id="YourCloset_Header">  </a>
 
-</head>
+        </header>
+        <main>
+        </main>
+      </section>
 
-<body>
-  <section id=app>
-    <header>
-      <div class="logo">
-        <img src="YourCloset_Header.png" alt="" id="YourCloset_Header">
-        <hr>
-    </header>
-    <main>
-    </main>
-  </section>
-  <section id="uebersicht" class="hidden">
-    <header>
-      <div class="headerIndividuell">
-        <h1>Übersicht</h1>
-        <hr>
+      <section id=startpage class="hidden">
+        <header>
 
-      </div>
-    </header>
-    <main>
+        </header>
+        <main>
+          <div id="willkommenText">
+            Herzlich Willkommen bei Your Closet!
 
-      <div class="container">
-        <div class="tab tab-1">
-          <table id="table" border="1">
-            <tr>
-              <th>Name</th>
-              <th>Marke</th>
-              <th>Farbe</th>
-              <th>Material</th>
-              <th>Kategorie</th>
-              <th>✓</th>
-            </tr>
-            <tr>
-              <td>Lieblingspulli</td>
-              <td>H&M</td>
-              <td>blue</td>
-              <td>Baumwolle</td>
-              <td>Oberteile</td>
-              <td class="radioSpalte"> <input type="checkbox" id="scales" name="scales" </td> </tr> <tr>
-              <td>Lieblingspulli</td>
-              <td>H&M</td>
-              <td>blue</td>
-              <td>Baumwolle</td>
-              <td>Oberteile</td>
-              <td class="radioSpalte"> <input type="checkbox" id="scales" name="scales" </td> </tr> <tr>
-              <td>Hose mit Löchern</td>
-              <td>H&M</td>
-              <td>blue</td>
-              <td>Jeans</td>
-              <td>Hosen</td>
-              <td class="radioSpalte"> <input type="checkbox" id="scales" name="scales" </td> </tr> </table> </div> <div
-                  class="tab tab-2">
+          </div>
+          <div class="startText">
+            Starte jetzt und erstelle deinen virtuellen Kleiderschrank
 
-                <button id="hinButton" onclick=>Hinzufügen</button>
-                <button id="bearbButton" onclick=>Bearbeiten</button>
-                <button id="loeschButton" onclick=>Löschen</button>
+          </div>
 
 
+        <div class="startButton">
+        <a  href="/uebersicht" navigo> <button type="button" name="uebersichtButton" id="uebersichtButton">Start</button> </a>
         </div>
 
-      </div>
-    </main>
 
-  </section>
-  </section>
+        </main>
+        <footer></footer>
+      </section>
 
-  <section id="hinzufuegen" class="hidden">
-    <header>
-      <div class="logo">
-        <link rel="stylesheet" type="text/css" href="hinzufuegen.css" media="screen" />
+      <section id="uebersicht" class="hidden">
+            <header>
+              <div class="nav">
+                  <a href="/uebersicht" data-navigo>
+              </div>
 
-        <img src="YourCloset_Header.png" alt="" id="YourCloset_Header">
-        <hr>
-      </div>
-      <div class="headerIndividuell">
-        <h1>Hinzufügen</h1>
-        <hr>
-      </div>
-    </header>
-    <br />
+              <div class="headerIndividuell">
 
-    <main>
-      <div class="container">
-        <table id="außenrum">
-
-          <td>
+                <h1>Übersicht</h1>
 
 
-            <table id="table2" border="1">
-              <tr>
-                <td>Name</td>
-                <td><input type="text" id="input1" /></td>
-                <td>Marke</td>
-                <td><input type="text" id="input1" /></td>
-              </tr>
-              <tr>
-                <td>Kleidungsstück</td>
-                <td><input type="text" id="input1" /></td>
-              </tr>
-              <tr>
-                <td>Farbe</td>
-                <td><input type="text" id="input1" /></td>
-                <td>ID</td>
-                <td><input type="text" id="input1" /></td>
-              </tr>
-              <tr>
-                <td>Material</td>
-                <td><input type="text" id="input1" /></td>
-                <td>Wäsche</td>
-                <td><input type="text" id="input1" /></td>
-              </tr>
-              <tr>
-                <td>Größe</td>
-                <td><input type="text" id="input1" /></td>
-              </tr>
 
-            </table>
-          </td>
-          <td>
-            <img src="" alt="+" id="Dirndl" />
-          </td>
-        </table>
+              </div>
+            </header>
+            <main>
 
+            <div class="container">
+                <div class="tab tab-1">
+                    <table id="table" border="1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Marke</th>
+                            <th>Farbe</th>
+                            <th>Material</th>
+                            <th>Kategorie</th>
+                            <th>✓</th>
+                        </tr>
+                        <tr>
+                            <td>Lieblingspulli</td>
+                            <td>H&M</td>
+                            <td>blue</td>
+                            <td>Baumwolle</td>
+                            <td>Oberteile</td>
+                            <td class= "radioSpalte" > <input type="checkbox" id="check1" name="scales" </td>
+                        </tr>
+                        <tr>
+                            <td>Lieblingspulli</td>
+                            <td>H&M</td>
+                            <td>blue</td>
+                            <td>Baumwolle</td>
+                            <td>Oberteile</td>
+                            <td class= "radioSpalte" > <input type="checkbox" id="check2" name="scales" </td>
 
-        <br />
-        <br />
-        <div id="bereich">
-          Passt zu: <br>
-          <textarea id="input2" cols="67" rows="11"></textarea>
-        </div>
-      </div>
-    </main>
-  </section>
+                        </tr>
+                        <tr>
+                            <td>Hose mit Löchern</td>
+                            <td>H&M</td>
+                            <td>blue</td>
+                            <td>Jeans</td>
+                            <td>Hosen</td>
+                          <td class= "radioSpalte" > <input type="checkbox" id="check3" name="scales" </td>
+                        </tr>
+                    </table>
+                </div>
 
-  <section id="profil" class="hidden">
-    <header>
-      <div class="logo">
-        <link rel="stylesheet" type="text/css" href="profil.css" media="screen" />
+                <div class="buttonsUebersicht">
 
-        <img src="YourCloset_Header.png" alt="" id="YourCloset_Header">
-        <hr>
-      </div>
-      <div class="headerIndividuell">
-        <img src="" alt="+" class="someDress" />
-        <h1 class="clothing-name">{{clothing.name}}</h1>
-        <h2 class="clothing-category">{{clothing.category}}</h2>
-      </div>
+                    <a  href="/hinzufuegen" navigo> <button id="hinButton">Hinzufügen</button></a>
 
-      <body>
+                    <button id="loeschButton">Löschen</button>
 
-        <div class="meta-data-box">
-          <dt>Kleidungsstück:</dt>
-          <dd>{{clothing.category}}</dd>
-          <dt>Farbe:</dt>
-          <dd>{{clothing.color}}</dd>
-          <dt>Material:</dt>
-          <dd>{{clothing.material}}</dd>
-          <dt>Marke:</dt>
-          <dd>{{clothing.brand}}</dd>
-        </div>
+                </div>
 
-        <div class="additional-info-box">
-          <dt>Anlass:</dt>
-          <dd>{{clothing.occasion}}</dd>
-          <dt>Größe:</dt>
-          <dd>{{clothing.size}}</dd>
-          <dt>Pflegehinweis:</dt>
-          <dd>{{clothing.careInstruction}}</dd>
-          <dt>&nbsp;</dt>
-          <dd>&nbsp;</dd>
-        </div>
+            </div>
+            </main>
 
-        <div class="fits-box">
-          <dt>Passt zu:</dt>
-        </div>
+          </section>
+      </section>
 
-        <div class="buttons">
-          <button class="bearbButton" onclick=>Bearbeiten</button>
-          <button class="loeschButton" onclick=>Löschen</button>
-        </div>
+      <section id="hinzufuegen" class="hidden">
+          <header>
 
-      </body>
-  </section>
+            <div class="headerIndividuell">
+              <h1>Hinzufügen</h1>
+                <a href="/uebersicht" data-navigo>
+
+            </div>
+          </header>
+          <br />
+
+          <main>
+              <div class="container">
+                  <!--
+              <table id="außenrum">
+
+                  <td> -->
+
+                  <table id="table2" border="1">
+                      <tr>
+                          <td>ID</td>
+                          <td><input type="text" class="inputEingabe" id="inputID"/></td>
+                          <td>Name</td>
+                          <td><input type="text" class="inputEingabe" id="inputName"/></td>
+
+                      </tr>
+                      <tr>
+                          <td>Marke</td>
+                          <td><input type="text" class="inputEingabe" id="inputMarke"/></td>
+                          <td>Farbe</td>
+                          <td><input type="text" class="inputEingabe" id="inputFarbe"/></td>
+                      </tr>
+                      <tr>
+                          <td>Material</td>
+                          <td><input type="text" class="inputEingabe" id="inputMaterial"/></td>
+                          <td>Kategorie</td>
+                          <td><input type="text" class="inputEingabe" id="inputKategorie"/></td>
+                      </tr>
+                      <tr>
+                          <td>Wäsche</td>
+                          <td><input type="text" class="inputEingabe" id="inputWasch"/></td>
+                          <td>Größe</td>
+                          <td><input type="text" class="inputEingabe" id="inputGroe"/></td>
+                      </tr>
+
+                  </table>
+                 <!-- </td>
+                   <td>
+                    <img src="" alt="+" id="Dirndl"/>
+                  </td>
+            </table> -->
+
+                  <div id="bereich">
+                      Passt zu: <br>
+                      <textarea id="inputPasstZu" cols="67" rows="11"></textarea>
+                  </div>
+                  <div id=speicherHinzuButtonDIV>
+                    <button id="speicherHinzufuegen" >Speichern</button>
+                  </div>
+              </div>
+          </main>
+      </section>
+
+      <section id= "profil" class="hidden">
+
+      </section>
 </body>
 
 </html>

@@ -1,0 +1,70 @@
+
+.startpage hr{
+  display: none;
+}
+.startpage #YourCloset_Header{
+    animation: großZuKlein 1s ease-in-out both 0.8s;
+  }
+
+  @keyframes großZuKlein {
+  from {
+    width: 100vw; margin-left:0vw;}
+  to {width: 50vw; margin-left:25vw;}
+  }
+
+
+.startButton{
+  text-align: center;
+  margin: 2vw;
+
+}
+
+#uebersichtButton{
+  background-color: white;
+  background-image: url(buttonHintergrund.png);
+  background-size: 99%;
+  border: none;
+  width: 5vw;
+  height: 2vw;
+  animation: uebersichtButtonAnimation 1s ease-in-out both 0.8s;
+}
+
+
+@keyframes uebersichtButtonAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+
+    text-align: center;
+  }
+
+}
+#willkommenText {
+  text-align: center;
+    font-size: 3vw%;
+  animation: textwelle 1s ease-in-out both 0.8s;
+}
+
+
+@keyframes textwelle {
+
+  from {
+    font-size: 0;
+    opacity: 0;
+    text-align: center;
+  }
+  to {
+    font-size: 150%;
+    opacity: 1;
+    text-align: center;
+  }
+
+
+}
+.startText{
+  text-align: center;
+  animation: textwelle 1s ease-in-out both 0.8s;
+
+
+}
