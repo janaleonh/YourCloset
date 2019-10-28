@@ -19,6 +19,7 @@ class App {
     this._router = new Navigo();
     this._currentUrl = "";
     this._navAborted = false;
+    this._db = new DB();
 
 
     this._router.on({
