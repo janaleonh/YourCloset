@@ -43,12 +43,11 @@
 #willkommenText {
   text-align: center;
     font-size: 3vw%;
-  animation: textwelle 1s ease-in-out both 0.8s;
+  animation: willkommenAni 1s ease-in-out both 0.8s;
 }
 
 
-@keyframes textwelle {
-
+@keyframes willkommenAni {
   from {
     font-size: 0;
     opacity: 0;
@@ -64,7 +63,19 @@
 }
 .startText{
   text-align: center;
-  animation: textwelle 1s ease-in-out both 0.8s;
+  animation: startTextAni 1s ease-in-out both 0.8s;
+}
 
 
+@keyframes startTextAni {
+  from {
+    font-size: 0;
+    opacity: 0;
+    text-align: center;
+  }
+  to {
+    font-size: 120%;
+    opacity: 1;
+    text-align: center;
+  }
 }
