@@ -17,7 +17,6 @@ class Startpage {
     // Anzuzeigende HTML-Elemente ermitteln
     let section = document.querySelector("#startpage").cloneNode(true);
 
-
     return {
         className: "startpage",
         topbar: section.querySelectorAll("header > *"),
@@ -36,8 +35,6 @@ class Startpage {
   get title() {
     return "Startpage";
   }
-
-
 
 }
 
