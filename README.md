@@ -4,7 +4,7 @@ App stellt digitalisierten Kleiderschrank dar. Der Anwender oder die Anwenderin 
 
 ## Start
 
-beim starten der App bitte den aktuellsten stand benutzen.
+beim starten/ bearbeiten der App bitte den aktuellsten stand benutzen.
 
 1. `npm install`
 2. `npm run start`

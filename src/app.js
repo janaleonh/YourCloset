@@ -6,7 +6,9 @@ import Navigo from "navigo/lib/navigo.js";
 import Uebersicht from "./uebersicht/uebersicht.js";
 import Hinzufuegen from "./hinzufuegen/hinzufuegen.js";
 import Startpage from "./startpage/startpage.js";
+import Profil from "./profil/profil.js";
 import DB from "./database.js";
+import { runInThisContext } from "vm";
 
 
 
@@ -28,6 +30,7 @@ class App {
       "/uebersicht":            () => this.showUebersicht(),
       "/hinzufuegen":         () => this.showHinzufuegen(),
       "/start":               () => this.showStartpage(),
+      "/profil":              () => this.showProfil(),
 
     });
 
@@ -65,6 +68,12 @@ class App {
   showHinzufuegen() {
     console.log("hinzufügen");
     let view = new Hinzufuegen(this);
+    this._switchVisibleView(view);
+  }
+
+  showProfil() {
+    console.log("profil");
+    let view = new Profil(this);
     this._switchVisibleView(view);
   }
 
