@@ -11,31 +11,37 @@ dd{
 }
   
 .meta-data-box{
+    background-color:rgba(240, 208, 212, 0.35);
     border: solid 1px;
+    border-color: rgba(240, 208, 212);
     height: 10em;
     width: 30%;
-    margin:  3em 3em 3em 5em;
+    margin:  3em 4em 3em 7em;
     padding: 2.5em;
     padding-top: 4em;
     display: inline-block;
 }
     
 .additional-info-box{
+    background-color:rgba(240, 208, 212, 0.35);
     border: solid 1px;
+    border-color: rgba(240, 208, 212);
     height: 10em;
     width: 30%;
-    margin:   3em 5em 3em 3em;
+    margin:   3em 7em 3em 4em;
     padding: 2.5em;
     padding-top: 4em;
     display: inline-block;
 }
     
 .fits-box{
+    background-color: rgba(240, 208, 212, 0.35);
     padding: 2.5em;
     width: 75%;
     border: solid 1px;
+    border-color: rgba(240, 208, 212);
     height: 10em;
-    margin:  3em 3em 3em 5em;
+    margin:  3em 3em 3em 7em;
 }
 
 .buttons{
