@@ -35,6 +35,7 @@
   "homepage": "https://github.com/janaleonh/YourCloset#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.1",
     "shelljs": "^0.8.3"
   },
   "dependencies": {
