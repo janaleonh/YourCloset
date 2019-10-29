@@ -27,7 +27,7 @@ class App {
     this._router.on({
       "*":                    () => this.showStartpage(),
       "/":                    () => this.showStartpage(),
-      "/uebersicht":            () => this.showUebersicht(),
+      "/uebersicht":          () => this.showUebersicht(),
       "/hinzufuegen":         () => this.showHinzufuegen(),
       "/start":               () => this.showStartpage(),
       "/profil":              () => this.showProfil(),
