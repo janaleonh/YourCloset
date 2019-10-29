@@ -4,24 +4,23 @@ text-align: center;
 
 }
 
-.uebersicht table{
-width: 90vw;
-margin: 5vw;
-align-items: center;
-}
+.uebersicht table, th, td{
 
-
-.uebersicht th{
-  /*font-size: 1.5vw;*/
+  width: 90vw;
+  margin: 5vw;
+  height: 3vw;
+  border-bottom: 0.5px solid rgb(245, 195, 195);
   font-weight: lighter;
-
+  text-align: left;
 }
-.uebersicht td{
-  /*font-size: 1vw;*/
-  height: 1.5vw;
-
+.uebersicht th{
+  font-weight: bold;
 }
-
+.uebersicht table{
+  background: rgba(240, 208, 212, 0.05);
+  background-size: 100%;
+  border-collapse: collapse;
+}
 .radioSpalte{
 
   text-align: center; /* center checkbox horizontally */
@@ -55,8 +54,4 @@ h1{
 
 hr{
   border:  0.1px solid #eeeeee;
-}
-
-table{
-  border-collapse: collapse;
 }

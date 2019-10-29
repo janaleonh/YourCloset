@@ -1,220 +1,180 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>YourCloset - Übersicht</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script src="index.js"></script>
 
-<head>
-  <title>YourCloset - Übersicht</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="index.js"></script>
+    </head>
+    <body>
+      <section id=app>
+        <header>
+          <div class="logo">
+            <a  href="/uebersicht" navigo><img src="YourCloset_Header.png" alt="" id="YourCloset_Header">  </a>
 
-</head>
+        </header>
+        <main>
+        </main>
+      </section>
 
-<body>
-  <section id=app>
-    <header>
-      <div class="logo">
-        <a href="/uebersicht" navigo><img src="YourCloset_Header.png" alt="" id="YourCloset_Header"> </a>
+      <section id=startpage class="hidden">
+        <header>
 
-    </header>
-    <main>
-    </main>
-  </section>
+        </header>
+        <main>
+          <div id="willkommenText">
+            Herzlich Willkommen bei Your Closet!
 
-  <section id=startpage class="hidden">
-    <header>
+          </div>
+          <div class="startText">
+            Starte jetzt und erstelle deinen virtuellen Kleiderschrank...
 
-    </header>
-    <main>
-      <div id="willkommenText">
-        Herzlich Willkommen bei Your Closet!
-
-      </div>
-      <div class="startText">
-        Starte jetzt und erstelle deinen virtuellen Kleiderschrank
-
-      </div>
+          </div>
 
 
-      <div class="startButton">
-        <a href="/uebersicht" navigo> <button type="button" name="uebersichtButton" id="uebersichtButton">Start</button>
-        </a>
-      </div>
-
-
-    </main>
-    <footer></footer>
-  </section>
-
-  <section id="uebersicht" class="hidden">
-    <header>
-      <div class="nav">
-        <a href="/uebersicht" data-navigo>
-      </div>
-
-      <div class="headerIndividuell">
-
-        <h1>Übersicht</h1>
-
-
-
-      </div>
-    </header>
-    <main>
-
-      <div class="container">
-        <div class="tab tab-1">
-          <table id="table" border="1">
-            <tr>
-              <th>Name</th>
-              <th>Marke</th>
-              <th>Farbe</th>
-              <th>Material</th>
-              <th>Kategorie</th>
-              <th>✓</th>
-            </tr>
-            <tr>
-              <td>Lieblingspulli</td>
-              <td>H&M</td>
-              <td>blue</td>
-              <td>Baumwolle</td>
-              <td>Oberteile</td>
-              <td class="radioSpalte"> <input type="checkbox" id="check1" name="scales" </td> </tr> <tr>
-              <td>Lieblingspulli</td>
-              <td>H&M</td>
-              <td>blue</td>
-              <td>Baumwolle</td>
-              <td>Oberteile</td>
-              <td class="radioSpalte"> <input type="checkbox" id="check2" name="scales" </td> </tr> <tr>
-              <td>Hose mit Löchern</td>
-              <td>H&M</td>
-              <td>blue</td>
-              <td>Jeans</td>
-              <td>Hosen</td>
-              <td class="radioSpalte"> <input type="checkbox" id="check3" name="scales" </td> </tr> </table> </div> <div
-                  class="buttonsUebersicht">
-
-                <a href="/hinzufuegen" navigo> <button id="hinButton">Hinzufügen</button></a>
-
-                <button id="loeschButton">Löschen</button>
-
+        <div class="startButton">
+        <a  href="/uebersicht" navigo> <button type="button" name="uebersichtButton" id="uebersichtButton">Start</button> </a>
         </div>
 
-      </div>
-    </main>
 
-  </section>
-  </section>
+        </main>
+        <footer></footer>
+      </section>
 
-  <section id="hinzufuegen" class="hidden">
-    <header>
+      <section id="uebersicht" class="hidden">
+            <header>
+              <div class="nav">
+                  <a href="/uebersicht" data-navigo>
+              </div>
 
-      <div class="headerIndividuell">
-        <h1>Hinzufügen</h1>
-        <a href="/uebersicht" data-navigo>
+              <div class="headerIndividuell">
 
-      </div>
-    </header>
-    <br />
+                <h1>Übersicht</h1>
+              </div>
+            </header>
+            <main>
 
-    <main>
-      <div class="container">
-        <!--
+            <div class="container">
+                <div class="uebersichtTabelle">
+                    <table id="table" border="0">
+                        <tr>
+                            <th>Name</th>
+                            <th>Marke</th>
+                            <th>Farbe</th>
+                            <th>Material</th>
+                            <th>Kategorie</th>
+                            <th>✓</th>
+                        <!-- </tr> -->
+                        <!--
+                        <tr>
+                            <td>Lieblingspulli</td>
+                            <td>H&M</td>
+                            <td>blue</td>
+                            <td>Baumwolle</td>
+                            <td>Oberteile</td>
+                            <td class= "radioSpalte" > <input type="checkbox" id="check1" name="scales" </td>
+                        </tr>
+                        <tr>
+                            <td>Lieblingspulli</td>
+                            <td>H&M</td>
+                            <td>blue</td>
+                            <td>Baumwolle</td>
+                            <td>Oberteile</td>
+                            <td class= "radioSpalte" > <input type="checkbox" id="check2" name="scales" </td>
+
+                        </tr>
+                        <tr>
+                            <td>Hose mit Löchern</td>
+                            <td>H&M</td>
+                            <td>blue</td>
+                            <td>Jeans</td>
+                            <td>Hosen</td>
+                          <td class= "radioSpalte" > <input type="checkbox" id="check3" name="scales" </td>
+                      </tr>
+                  -->
+                    </table>
+                </div>
+
+                <div class="buttonsUebersicht">
+
+                    <a  href="/hinzufuegen" navigo> <button id="hinButton">Hinzufügen</button></a>
+
+                    <button id="loeschButton">Löschen</button>
+
+                </div>
+
+            </div>
+            </main>
+
+
+          </section>
+      </section>
+
+      <section id="hinzufuegen" class="hidden">
+          <header>
+
+            <div class="headerIndividuell">
+              <h1>Hinzufügen</h1>
+                <a href="/uebersicht" data-navigo>
+
+            </div>
+          </header>
+          <br />
+
+          <main>
+              <div class="container">
+                  <!--
               <table id="außenrum">
 
                   <td> -->
 
-        <table id="table2" border="1">
-          <tr>
-            <td>ID</td>
-            <td><input type="text" class="inputEingabe" id="inputID" /></td>
-            <td>Name</td>
-            <td><input type="text" class="inputEingabe" id="inputName" /></td>
+                  <table id="table2" border="1">
+                      <tr>
+                          <td>ID</td>
+                          <td><input type="text" class="inputEingabe" id="inputID"/></td>
+                          <td>Name</td>
+                          <td><input type="text" class="inputEingabe" id="inputName"/></td>
 
-          </tr>
-          <tr>
-            <td>Marke</td>
-            <td><input type="text" class="inputEingabe" id="inputMarke" /></td>
-            <td>Farbe</td>
-            <td><input type="text" class="inputEingabe" id="inputFarbe" /></td>
-          </tr>
-          <tr>
-            <td>Material</td>
-            <td><input type="text" class="inputEingabe" id="inputMaterial" /></td>
-            <td>Kategorie</td>
-            <td><input type="text" class="inputEingabe" id="inputKategorie" /></td>
-          </tr>
-          <tr>
-            <td>Wäsche</td>
-            <td><input type="text" class="inputEingabe" id="inputWasch" /></td>
-            <td>Größe</td>
-            <td><input type="text" class="inputEingabe" id="inputGroe" /></td>
-          </tr>
+                      </tr>
+                      <tr>
+                          <td>Marke</td>
+                          <td><input type="text" class="inputEingabe" id="inputMarke"/></td>
+                          <td>Farbe</td>
+                          <td><input type="text" class="inputEingabe" id="inputFarbe"/></td>
+                      </tr>
+                      <tr>
+                          <td>Material</td>
+                          <td><input type="text" class="inputEingabe" id="inputMaterial"/></td>
+                          <td>Kategorie</td>
+                          <td><input type="text" class="inputEingabe" id="inputKategorie"/></td>
+                      </tr>
+                      <tr>
+                          <td>Wäsche</td>
+                          <td><input type="text" class="inputEingabe" id="inputWasch"/></td>
+                          <td>Größe</td>
+                          <td><input type="text" class="inputEingabe" id="inputGroe"/></td>
+                      </tr>
 
-        </table>
-        <!-- </td>
+                  </table>
+                 <!-- </td>
                    <td>
                     <img src="" alt="+" id="Dirndl"/>
                   </td>
             </table> -->
 
-        <div id="bereich">
-          Passt zu: <br>
-          <textarea id="inputPasstZu" cols="67" rows="11"></textarea>
-        </div>
-        <div id=speicherHinzuButtonDIV>
-          <button id="speicherHinzufuegen">Speichern</button>
-        </div>
-      </div>
-    </main>
-  </section>
+                  <div id="bereich">
+                      <textarea id="inputNotizen" cols="67" rows="11">Notizen: </textarea>
+                  </div>
+                  
+                  <div id=speicherHinzuButtonDIV>
+                    <button id="speicherHinzufuegen" >Speichern</button>
+                  </div>
+              </div>
+          </main>
+      </section>
 
-  <section id="profil" class="hidden">
-      
-    <header>
-
-          <a href="/profil" navigo></a>
-
-      <div class="headerIndividuell">
-        <h1 class="clothing-name">{{clothing.name}}</h1>
-        <h2 class="clothing-category">{{clothing.category}}</h2>
-      </div>
-
-      <body>
-
-        <div class="meta-data-box">
-          <dt>Kleidungsstück:</dt>
-          <dd>{{clothing.category}}</dd>
-          <dt>Farbe:</dt>
-          <dd>{{clothing.color}}</dd>
-          <dt>Material:</dt>
-          <dd>{{clothing.material}}</dd>
-          <dt>Marke:</dt>
-          <dd>{{clothing.brand}}</dd>
-        </div>
-
-        <div class="additional-info-box">
-          <dt>Anlass:</dt>
-          <dd>{{clothing.occasion}}</dd>
-          <dt>Größe:</dt>
-          <dd>{{clothing.size}}</dd>
-          <dt>Pflegehinweis:</dt>
-          <dd>{{clothing.careInstruction}}</dd>
-          <dt>&nbsp;</dt>
-          <dd>&nbsp;</dd>
-        </div>
-
-        <div class="fits-box">
-          <dt>Passt zu:</dt>
-        </div>
-
-        <div class="buttons">
-          <button class="bearbButton">Bearbeiten</button>
-          <button class="loeschButton">Löschen</button>
-        </div>
-      </body>
-
-    </section>
-
-  </body>
-
+      <section id= "profil" class="hidden">
+      </section>
+</body>
 </html>
