@@ -21,6 +21,10 @@ class DB {
         _db = firebase.firestore();
     }
 
+    selectAllKleidung(){
+        return _db.collection("kleidung").get();
+    }
+
     kleidungHinzufuegen(kleidung){
         return _db.collection("kleidung").add(kleidung);
     }

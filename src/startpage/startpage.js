@@ -4,13 +4,14 @@ import stylesheet from "./startpage.css";
 
 
 let _app = "";
+let _db= "";
 
 
 class Startpage {
   constructor(app) {
     this._app = app;
     _app = this._app;
-
+    _db = app._db;
   }
 
   onShow() {
