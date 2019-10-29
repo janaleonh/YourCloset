@@ -30,7 +30,7 @@ class Hinzufuegen {
   }
 
   onLoad() {
-      document.getElementById("speicherHinzufuegen").addEventListener("click", () => { speichernEventListener() } );
+      document.getElementById("speicherHinzufuegen").addEventListener("click", speichernEventListener );
       return;
   }
 
