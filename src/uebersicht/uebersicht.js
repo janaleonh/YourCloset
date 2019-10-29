@@ -65,8 +65,7 @@ function einfügen (name, marke, farbe, material, kategorie){
     neueTr.appendChild(tdFarbe);
     neueTr.appendChild(tdMaterial);
     neueTr.appendChild(tdKategorie);
-
-
+    
 
     for(let i = 1; i<6; i++){
         //erzeugen der Tabellenspalten//
