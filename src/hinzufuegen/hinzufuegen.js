@@ -1,3 +1,4 @@
+
 "use strict";
 
 import stylesheet from "./hinzufuegen.css";
@@ -43,8 +44,11 @@ class Hinzufuegen {
   }
 }
 
+
+
 let speichernEventListener = (event) =>
     {
+      if(!checkEmptyInput()){
         let kleidungName = document.getElementById("inputName").value;
         let kleidungMarke = document.getElementById("inputMarke").value;
         let kleidungFarbe = document.getElementById("inputFarbe").value;
@@ -65,7 +69,8 @@ let speichernEventListener = (event) =>
 
         console.log(kleidungNeu);
         _db.kleidungHinzufuegen(kleidungNeu).then(() => {
-            document.getElementById("inputID").value = "";
+            //FEHLER, WEIL KEINE ID DA!
+            //document.getElementById("inputID").value = "";
             document.getElementById("inputName").value = "";
             document.getElementById("inputMarke").value = "";
             document.getElementById("inputFarbe").value = "";
@@ -76,5 +81,51 @@ let speichernEventListener = (event) =>
             _app._router.navigate("/uebersicht");
         });
     }
+  }
+  function checkEmptyInput(){
+              var isEmpty = false,
+                  name = document.getElementById("inputName").value,
+                  marke = document.getElementById("inputMarke").value,
+                  farbe = document.getElementById("inputFarbe").value,
+                  material = document.getElementById("inputMaterial").value,
+                  kategorie = document.getElementById("inputKategorie").value,
+                  waesche = document.getElementById("inputWasch").value,
+                  groesse = document.getElementById("inputGroe").value;
+
+
+                    console.log(name);
+
+
+              if(name === ""){
+                  alert("Bitte einen Namen eingeben!");
+                  isEmpty = true;
+              }  else if(marke === ""){
+                  alert("Bitte eine Marke eingeben!");
+                  isEmpty = true;
+              } else if(farbe === ""){
+                  alert("Bitte eine Farbe eingeben!");
+                  isEmpty = true;
+
+              } else if(material === ""){
+                 alert("Bitte ein Material eingeben!");
+                 isEmpty = true;
+
+             } else if(kategorie === ""){
+                 alert("Bitte eine Kategorie eingeben!");
+                 isEmpty = true;
+
+             }  else if(waesche === ""){
+                  alert("Bitte einen Pflegehinweis eingeben!");
+                  isEmpty = true;
+
+             }   else if(groesse === ""){
+                  alert("Bitte eine Größe eingeben!");
+                  isEmpty = true;
+              }
+
+
+
+              return isEmpty;
+          }
 
 export default Hinzufuegen;
