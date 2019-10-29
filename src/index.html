@@ -174,7 +174,48 @@
           </main>
       </section>
 
-      <section id= "profil" class="hidden">
+      <section id= "profil" class="hidden"><header>
+
+        <a href="/profil" navigo></a>
+
+    <div class="headerIndividuell">
+      <h1 class="clothing-name">{{clothing.name}}</h1>
+      <h2 class="clothing-category">{{clothing.category}}</h2>
+    </div>
+
+    <body>
+
+      <div class="meta-data-box">
+        <dt>Kleidungsstück:</dt>
+        <dd>{{clothing.category}}</dd>
+        <dt>Farbe:</dt>
+        <dd>{{clothing.color}}</dd>
+        <dt>Material:</dt>
+        <dd>{{clothing.material}}</dd>
+        <dt>Marke:</dt>
+        <dd>{{clothing.brand}}</dd>
+      </div>
+
+      <div class="additional-info-box">
+        <dt>Anlass:</dt>
+        <dd>{{clothing.occasion}}</dd>
+        <dt>Größe:</dt>
+        <dd>{{clothing.size}}</dd>
+        <dt>Pflegehinweis:</dt>
+        <dd>{{clothing.careInstruction}}</dd>
+        <dt>&nbsp;</dt>
+        <dd>&nbsp;</dd>
+      </div>
+
+      <div class="fits-box">
+        <dt>Passt zu:</dt>
+      </div>
+
+      <div class="buttons">
+        <button class="bearbButton">Bearbeiten</button>
+        <button class="loeschButton">Löschen</button>
+      </div>
+    </body>
       </section>
 </body>
 </html>
