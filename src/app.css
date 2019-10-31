@@ -1,17 +1,47 @@
-#YourCloset_Header{
-  width: 30vw;
-  margin-left: 35vw;
 
-}
 html{
-
-
-  background-image: url(background.png);
-  background-size: 100%;
   animation: fadein 0.9s  both;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #030310;
+    color: rgb(0, 4, 66);
 
 }
 
 @keyframes fadein{
 
   from{opacity:0;}to{opacity:1;}}@-moz-keyframes fadein{from{opacity:0;}to{opacity:1;}}@-webkit-keyframes fadein{from{opacity:0;}to{opacity:1;}}@-o-keyframes fadein{from{opacity:0;}to{opacity:1;}}
+
+
+  @media screen and (max-width: 400px) {
+
+    html{
+      background-image: url(background_mobil.png);
+      background-size: 100%;
+      font-size: 3vw;
+    }
+  }
+  #YourCloset_Header{
+    width: 50vw;
+    margin-left: 25vw;
+
+  }
+
+  @media screen and (max-width: 770px) {
+
+  }
+
+  @media screen and (min-width:  771px) {
+      html{
+        background-image: url(background.png);
+        background-size: 100%;
+      }
+      #YourCloset_Header{
+        width: 30vw;
+        margin-left: 35vw;
+
+      }
+}
+  .hidden{
+    display: none;
+  }
