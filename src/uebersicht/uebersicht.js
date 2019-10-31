@@ -54,7 +54,7 @@ function einfügen (name, marke, farbe, material, kategorie, id){
     let tdKategorie = document.createElement("td");
 
     //befüllen der Spalten//
-    tdName.innerHTML = name;
+    tdName.innerHTML = name; //a ref außenrum, navigopfad
     tdMarke.innerHTML = marke;
     tdFarbe.innerHTML = farbe;
     tdMaterial.innerHTML  = material;
@@ -101,3 +101,8 @@ function anzeigen(){
 
 
 export default Uebersicht;
+
+
+//jedes mal wenn neue tabellenzeile, h ref navigo link um zeile herum
+// ziel ist yourcloset/profil/id
+// 
