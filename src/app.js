@@ -30,7 +30,7 @@ class App {
       "/uebersicht":          () => this.showUebersicht(),
       "/hinzufuegen":         () => this.showHinzufuegen(),
       "/start":               () => this.showStartpage(),
-      "/profil/:id":              () => this.showProfil(),
+      "/profil/:id":    (params) => this.showProfil(params.id),
 
     });
 
@@ -71,9 +71,9 @@ class App {
     this._switchVisibleView(view);
   }
 
-  showProfil() {
+  showProfil(id) {
     console.log("profil");
-    let view = new Profil(this);
+    let view = new Profil(this,id);
     this._switchVisibleView(view);
   }
 

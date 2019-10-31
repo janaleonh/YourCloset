@@ -33,6 +33,9 @@ class DB {
         return _db.collection("kleidung").doc(id).delete();
     }
 
+    kleidungAuslesen(id){
+        return _db.collection("kleidung").doc(id).get();
+    }
 }
 
 export default DB;
