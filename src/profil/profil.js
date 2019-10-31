@@ -33,6 +33,22 @@ class Profil {
     }
 
   onLoad() {
+    document.getElementById("bearbButton").addEventListener("click", () => {
+      document.getElementById("inputName").value = document.getElementById("name").textContent;
+      document.getElementById("inputMarke").value = document.getElementById("marke").textContent;
+      document.getElementById("inputFarbe").value = document.getElementById("farbe").textContent;
+      document.getElementById("inputMaterial").value = document.getElementById("material").textContent;
+      document.getElementById("inputKategorie").value = document.getElementById("kleidungsstück").textContent;
+      document.getElementById("inputWasch").value = document.getElementById("wäsche").textContent;
+      document.getElementById("inputGroe").value = document.getElementById("größe").textContent;
+
+      _app._router.navigate("/bearbeiten/" +  _id);
+    });
+
+    document.getElementById("loeschButton").addEventListener("click", () => {
+      _db.kleidungLoeschen(_id).then(_app._router.navigate("/uebersicht"))
+    });
+
     return;
   }
 

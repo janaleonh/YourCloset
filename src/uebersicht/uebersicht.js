@@ -67,7 +67,7 @@ function einfügen (name, marke, farbe, material, kategorie, id){
     neueTr.appendChild(tdMaterial);
     neueTr.appendChild(tdKategorie);
 
-    tdName.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
+    neueTr.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
 
     for(let i = 1; i<6; i++){
         //erzeugen der Tabellenspalten//

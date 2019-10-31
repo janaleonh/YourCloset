@@ -7,14 +7,18 @@ import DB from "../database.js"
 
 let _app = "";
 let _db = "";
+let _id = "";
+let _newClothing = "";
 
 
 
 class Hinzufuegen {
-  constructor(app) {
+  constructor(app, newClothing, id) {
     this._app = app;
     _app = this._app;
     _db = app._db;
+    _id = id;
+    _newClothing = newClothing;
   }
 
   onShow() {
@@ -67,9 +71,12 @@ let speichernEventListener = (event) =>
             "GROESSE": kleidungGroesse
         };
 
+        if(_newClothing){
+
+        
+
         console.log(kleidungNeu);
         _db.kleidungHinzufuegen(kleidungNeu).then(() => {
-            //FEHLER, WEIL KEINE ID DA!
             //document.getElementById("inputID").value = "";
             document.getElementById("inputName").value = "";
             document.getElementById("inputMarke").value = "";
@@ -80,6 +87,19 @@ let speichernEventListener = (event) =>
             document.getElementById("inputGroe").value = "";
             _app._router.navigate("/uebersicht");
         });
+      }else{
+        _db.kleidungAktualisieren(_id, kleidungNeu).then(() => {
+          //document.getElementById("inputID").value = "";
+          document.getElementById("inputName").value = "";
+          document.getElementById("inputMarke").value = "";
+          document.getElementById("inputFarbe").value = "";
+          document.getElementById("inputMaterial").value = "";
+          document.getElementById("inputKategorie").value = "";
+          document.getElementById("inputWasch").value = "";
+          document.getElementById("inputGroe").value = "";
+          _app._router.navigate("/uebersicht");
+      });
+      }
     }
   }
   function checkEmptyInput(){

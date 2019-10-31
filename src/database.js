@@ -36,6 +36,10 @@ class DB {
     kleidungAuslesen(id){
         return _db.collection("kleidung").doc(id).get();
     }
+
+    kleidungAktualisieren(id, kleidung){
+        return _db.collection("kleidung").doc(id).update(kleidung);
+    }
 }
 
 export default DB;

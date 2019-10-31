@@ -28,7 +28,8 @@ class App {
       "*":                    () => this.showStartpage(),
       "/":                    () => this.showStartpage(),
       "/uebersicht":          () => this.showUebersicht(),
-      "/hinzufuegen":         () => this.showHinzufuegen(),
+      "/hinzufuegen":         () => this.showHinzufuegen(true, ""),
+      "/bearbeiten/:id": (params) => this.showHinzufuegen(false, params.id),
       "/start":               () => this.showStartpage(),
       "/profil/:id":    (params) => this.showProfil(params.id),
 
@@ -65,9 +66,9 @@ class App {
     this._switchVisibleView(view);
   }
 
-  showHinzufuegen() {
+  showHinzufuegen(newClothing, id) {
     console.log("hinzufügen");
-    let view = new Hinzufuegen(this);
+    let view = new Hinzufuegen(this, newClothing, id);
     this._switchVisibleView(view);
   }
 
