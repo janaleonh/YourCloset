@@ -40,11 +40,11 @@ class Uebersicht {
   }
 }
 
-function einfügen (name, marke, farbe, material, kategorie){
+function einfügen (name, marke, farbe, material, kategorie, id){
     //Einfügen des KLeidungsstück//
     //Einfügen von neuer Zeile an erster Stelle in der Tabelle //
     let neueTr = document.getElementById("table").insertRow();
-    
+
 
     //erzeugen der Tabellenspalten//
     let tdName = document.createElement("td");
@@ -66,7 +66,8 @@ function einfügen (name, marke, farbe, material, kategorie){
     neueTr.appendChild(tdFarbe);
     neueTr.appendChild(tdMaterial);
     neueTr.appendChild(tdKategorie);
-    
+
+    tdName.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
 
     for(let i = 1; i<6; i++){
         //erzeugen der Tabellenspalten//
@@ -91,7 +92,7 @@ function anzeigen(){
             let material= doc.data().MATERIAL;
             let kategorie= doc.data().KATEGORIE;
 
-            einfügen(name, marke,farbe, material, kategorie);
+            einfügen(name, marke,farbe, material, kategorie, doc.id);
         });
     });
 }

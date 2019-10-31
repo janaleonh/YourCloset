@@ -30,7 +30,7 @@ class App {
       "/uebersicht":          () => this.showUebersicht(),
       "/hinzufuegen":         () => this.showHinzufuegen(),
       "/start":               () => this.showStartpage(),
-      "/profil":              () => this.showProfil(),
+      "/profil/:id":              () => this.showProfil(),
 
     });
 
