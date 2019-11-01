@@ -12,8 +12,10 @@ text-align: center;
   text-align: left;
 
 }
-td{
-  width: 14vw;
+table{
+  width: 98vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 .uebersicht th{
   font-weight: bold;
