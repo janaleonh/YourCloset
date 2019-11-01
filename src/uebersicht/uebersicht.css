@@ -6,12 +6,14 @@ text-align: center;
 
 .uebersicht table, th, td{
 
-  width: 90vw;
-  margin: 5vw;
   height: 3vw;
   border-bottom: 0.5px solid rgb(245, 195, 195);
   font-weight: lighter;
   text-align: left;
+
+}
+td{
+  width: 14vw;
 }
 .uebersicht th{
   font-weight: bold;
@@ -26,6 +28,7 @@ text-align: center;
   text-align: center; /* center checkbox horizontally */
   vertical-align: middle;
 }
+
 
 
 .uebersicht input{

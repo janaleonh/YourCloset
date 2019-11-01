@@ -73,7 +73,7 @@ let speichernEventListener = (event) =>
 
         if(_newClothing){
 
-        
+
 
         console.log(kleidungNeu);
         _db.kleidungHinzufuegen(kleidungNeu).then(() => {

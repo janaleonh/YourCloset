@@ -28,7 +28,9 @@ class Uebersicht {
 
   onLoad() {
       anzeigen();
-    return;
+
+      return;
+
   }
 
   onLeave(goon) {
@@ -52,6 +54,10 @@ function einfügen (name, marke, farbe, material, kategorie, id){
     let tdFarbe = document.createElement("td");
     let tdMaterial = document.createElement("td");
     let tdKategorie = document.createElement("td");
+    let tdLoeschen = document.createElement("td");
+
+
+    tdLoeschen.type = "checkbox";
 
     //befüllen der Spalten//
     tdName.innerHTML = name; //a ref außenrum, navigopfad
@@ -59,6 +65,7 @@ function einfügen (name, marke, farbe, material, kategorie, id){
     tdFarbe.innerHTML = farbe;
     tdMaterial.innerHTML  = material;
     tdKategorie.innerHTML = kategorie;
+    tdLoeschen.innerHTML = "🗑️";
 
     //hinzufügen der Spalten//
     neueTr.appendChild(tdName);
@@ -66,8 +73,17 @@ function einfügen (name, marke, farbe, material, kategorie, id){
     neueTr.appendChild(tdFarbe);
     neueTr.appendChild(tdMaterial);
     neueTr.appendChild(tdKategorie);
+    neueTr.appendChild(tdLoeschen);
 
-    neueTr.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
+    tdName.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
+    tdMarke.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
+    tdFarbe.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
+    tdMaterial.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
+    tdKategorie.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
+    tdLoeschen.addEventListener("click",()=> {
+      _db.kleidungLoeschen(id);
+
+    });
 
     for(let i = 1; i<6; i++){
         //erzeugen der Tabellenspalten//
@@ -92,10 +108,13 @@ function anzeigen(){
             let material= doc.data().MATERIAL;
             let kategorie= doc.data().KATEGORIE;
 
+
             einfügen(name, marke,farbe, material, kategorie, doc.id);
         });
     });
 }
+
+
 
 
 
@@ -105,4 +124,4 @@ export default Uebersicht;
 
 //jedes mal wenn neue tabellenzeile, h ref navigo link um zeile herum
 // ziel ist yourcloset/profil/id
-// 
+//
