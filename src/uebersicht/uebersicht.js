@@ -81,6 +81,8 @@ function einfügen (name, marke, farbe, material, kategorie, id){
     tdMaterial.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
     tdKategorie.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
     tdLoeschen.addEventListener("click", () => {
+      let answer = confirm("Soll der ausgewählte Eintrag gelöscht werden?");
+      if(true){
         _db.kleidungLoeschen(id).then(function() {
             var rowCount = document.getElementById("table").rows.length;
             var element = document.getElementById("table");
@@ -88,8 +90,9 @@ function einfügen (name, marke, farbe, material, kategorie, id){
                 element.deleteRow(rowCount-1);
             }
             anzeigen();
+
       });
-    });
+    }});
 
     for(let i = 1; i<6; i++){
         //erzeugen der Tabellenspalten//

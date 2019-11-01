@@ -2,6 +2,7 @@
 .startpage hr{
   display: none;
 }
+
 .startpage #YourCloset_Header{
     animation: großZuKlein 1s ease-in-out both 0.8s;
   }

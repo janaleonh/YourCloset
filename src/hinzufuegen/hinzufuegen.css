@@ -124,6 +124,16 @@ h1{
     }
 }
 
+#speicherHinzufuegen{
+    width: 6vw;
+    height: 3vw;
+    background-color: white;
+    background-image: url(../buttonHintergrund.png);
+    background-size: 105%;
+    font-size: 1vw;
+    border: none;
+  
+}
 @media screen and (min-width: 771px) {
     #table2{
         width: 80vw;
