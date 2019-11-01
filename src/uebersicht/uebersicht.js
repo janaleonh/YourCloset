@@ -82,7 +82,7 @@ function einfügen (name, marke, farbe, material, kategorie, id){
     tdKategorie.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
     tdLoeschen.addEventListener("click", () => {
       let answer = confirm("Soll der ausgewählte Eintrag gelöscht werden?");
-      if(true){
+      if(answer === true){
         _db.kleidungLoeschen(id).then(function() {
             var rowCount = document.getElementById("table").rows.length;
             var element = document.getElementById("table");
