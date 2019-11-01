@@ -111,8 +111,16 @@
                           <td><input type="text" class="inputEingabe" id="inputMaterial"/></td>
                       </tr>
                       <tr>
-                          <td>Kategorie</td>
-                          <td><input type="text" class="inputEingabe" id="inputKategorie"/></td>
+                        <select  class="inputEingabe" id="inputKategorie"/>
+                       <option value="Hose">Hosen</option>
+                       <option value="Röcke">Röcke</option>
+                       <option value="Shirts">Shirts</option>
+                       <option value="Blusen">Blusen</option>
+                       <option value="Schuhe">Schuhe</option>
+                       <option value="Jacken">Jacken</option>
+                       <option value="Accessoires">Accessoires</option>
+                       </select>
+
                           <td>Pflegehinweis</td>
                           <td><input type="text" class="inputEingabe" id="inputWasch"/></td>
                       </tr>
@@ -146,21 +154,21 @@
     <body>
 
       <div class="meta-data-box">
-        <dt>Kleidungsstück:</dt>
-        <dd id="kleidungsstück">&nbsp;</dd>
+        <dt>Marke:</dt>
+        <dd id="marke">&nbsp;</dd>
         <dt>Farbe:</dt>
         <dd id="farbe">&nbsp;</dd>
         <dt>Material:</dt>
         <dd id="material">&nbsp;</dd>
-        <dt>Marke:</dt>
-        <dd id="marke">&nbsp;</dd>
+        <dt>Kategorie:</dt>
+        <dd id="kategorie">&nbsp;</dd>
       </div>
 
       <div class="additional-info-box">
         <dt>Größe:</dt>
         <dd id="größe">&nbsp;</dd>
         <dt>Pflegehinweis:</dt>
-        <dd id="wäsche">&nbsp;</dd>
+        <dd id="pflegehinweis">&nbsp;</dd>
         <dt>&nbsp;</dt>
         <dd>&nbsp;</dd>
       </div>
