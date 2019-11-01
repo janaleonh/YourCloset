@@ -57,7 +57,7 @@ function einfügen (name, marke, farbe, material, kategorie, id){
     let tdLoeschen = document.createElement("td");
 
 
-    tdLoeschen.type = "checkbox";
+    //tdLoeschen.type = "checkbox";
 
     //befüllen der Spalten//
     tdName.innerHTML = name; //a ref außenrum, navigopfad
@@ -80,9 +80,15 @@ function einfügen (name, marke, farbe, material, kategorie, id){
     tdFarbe.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
     tdMaterial.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
     tdKategorie.addEventListener("click", () => { _app._router.navigate("/profil/" + id) } );
-    tdLoeschen.addEventListener("click",()=> {
-      _db.kleidungLoeschen(id);
-
+    tdLoeschen.addEventListener("click", () => {
+        _db.kleidungLoeschen(id).then(function() {
+            var rowCount = document.getElementById("table").rows.length;
+            var element = document.getElementById("table");
+            for(let i = 1; i < rowCount; rowCount--) {
+                element.deleteRow(rowCount-1);
+            }
+            anzeigen();
+      });
     });
 
     for(let i = 1; i<6; i++){
