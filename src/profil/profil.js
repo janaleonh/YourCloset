@@ -63,13 +63,16 @@ class Profil {
 
 let onFinishedLoading = (doc) => {
     console.log("Finished loading!");
+    console.log("Finished loading!");
     document.getElementById("name").textContent = doc.data().NAME;
-    document.getElementById("kleidungsstück").textContent = doc.data().KATEGORIE;
+    document.getElementById("kategorie").textContent = doc.data().KATEGORIE;
     document.getElementById("farbe").textContent = doc.data().FARBE;
     document.getElementById("material").textContent = doc.data().MATERIAL;
     document.getElementById("marke").textContent = doc.data().MARKE;
     document.getElementById("größe").textContent = doc.data().GROESSE;
-    document.getElementById("wäsche").textContent = doc.data().WAESCHE;
-}
+    document.getElementById("pflegehinweis").textContent = doc.data().WAESCHE;
+
+    }
+
 
 export default Profil;
