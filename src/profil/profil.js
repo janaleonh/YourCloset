@@ -38,8 +38,8 @@ class Profil {
       document.getElementById("inputMarke").value = document.getElementById("marke").textContent;
       document.getElementById("inputFarbe").value = document.getElementById("farbe").textContent;
       document.getElementById("inputMaterial").value = document.getElementById("material").textContent;
-      document.getElementById("inputKategorie").value = document.getElementById("kleidungsstück").textContent;
-      document.getElementById("inputWasch").value = document.getElementById("wäsche").textContent;
+      document.getElementById("inputKategorie").value = document.getElementById("kategorie").textContent;
+      document.getElementById("inputWasch").value = document.getElementById("pflegehinweis").textContent;
       document.getElementById("inputGroe").value = document.getElementById("größe").textContent;
 
       _app._router.navigate("/bearbeiten/" +  _id);

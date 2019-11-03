@@ -59,7 +59,7 @@
                 <div class="uebersichtTabelle">
                     <table id="table" border="0">
                         <tr id="Tabellenhead">
-                            <th>NAME</th>
+                            <th id=thID onload="">NAME</th>
                             <th>MARKE</th>
                             <th>FARBE</th>
                             <th>MATERIAL</th>
@@ -101,25 +101,21 @@
                       <tr>
                           <td>Name</td>
                           <td><input type="text" class="inputEingabe" id="inputName"/></td>
-                          <td>Marke</td>
-                          <td><input type="text" class="inputEingabe" id="inputMarke"/></td>
+                          <td>Kategorie</td>
+                          <td><input type="text" class="inputEingabe" id="inputKategorie"/></td>
+
+
                       </tr>
                       <tr>
-                          <td>Farbe</td>
-                          <td><input type="text" class="inputEingabe" id="inputFarbe"/></td>
-                          <td>Material</td>
-                          <td><input type="text" class="inputEingabe" id="inputMaterial"/></td>
+                        <td>Farbe</td>
+                        <td><input type="text" class="inputEingabe" id="inputFarbe"/></td>
+
+                        <td>Material</td>
+                        <td><input type="text" class="inputEingabe" id="inputMaterial"/></td>
                       </tr>
                       <tr>
-                        <select  class="inputEingabe" id="inputKategorie"/>
-                       <option value="Hose">Hosen</option>
-                       <option value="Röcke">Röcke</option>
-                       <option value="Shirts">Shirts</option>
-                       <option value="Blusen">Blusen</option>
-                       <option value="Schuhe">Schuhe</option>
-                       <option value="Jacken">Jacken</option>
-                       <option value="Accessoires">Accessoires</option>
-                       </select>
+                        <td>Marke</td>
+                        <td><input type="text" class="inputEingabe" id="inputMarke"/></td>
 
                           <td>Pflegehinweis</td>
                           <td><input type="text" class="inputEingabe" id="inputWasch"/></td>
@@ -152,19 +148,21 @@
     </div>
 
     <body>
+      <div class="profilBoxen">
 
-      <div class="meta-data-box">
+      <div class="meta-data-box" id="box1">
+        <dt>Kategorie:</dt>
+        <dd id="kategorie">&nbsp;</dd>
         <dt>Marke:</dt>
         <dd id="marke">&nbsp;</dd>
         <dt>Farbe:</dt>
         <dd id="farbe">&nbsp;</dd>
-        <dt>Material:</dt>
-        <dd id="material">&nbsp;</dd>
-        <dt>Kategorie:</dt>
-        <dd id="kategorie">&nbsp;</dd>
+
       </div>
 
-      <div class="additional-info-box">
+      <div class="meta-data-box" id="box2">
+        <dt>Material:</dt>
+        <dd id="material">&nbsp;</dd>
         <dt>Größe:</dt>
         <dd id="größe">&nbsp;</dd>
         <dt>Pflegehinweis:</dt>
@@ -172,6 +170,8 @@
         <dt>&nbsp;</dt>
         <dd>&nbsp;</dd>
       </div>
+    </div>
+
 
 
       <div class="buttons">
