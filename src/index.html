@@ -102,9 +102,16 @@
                           <td>Name</td>
                           <td><input type="text" class="inputEingabe" id="inputName"/></td>
                           <td>Kategorie</td>
-                          <td><input type="text" class="inputEingabe" id="inputKategorie"/></td>
 
-
+                          <td><select name="inputKategorieName" id="inputKategorie" class="inputEingabe">
+                            <option value="" selected disabled hidden>Bitte wählen...</option>
+                            <option value="Hose" id="Hose">Hose</option>
+                            <option value="Shirt" id="Shirt">Shirt</option>
+                            <option value="Pullover" id="Pullover">Pullover</option>
+                            <option value="Kleid" id="Kleid">Kleid</option>
+                            <option value="Bluse/Hemd" id="Bluse/Hemd">Bluse/Hemd</option>
+                            <option value="Jacke" id="Jacke">Jacke</option>
+                          </select></td>
                       </tr>
                       <tr>
                         <td>Farbe</td>
@@ -144,6 +151,15 @@
         <a href="/profil" navigo></a>
 
     <div class="headerIndividuell">
+      <div id="divIcon">
+        <img id="iconHose" class="hideIcon"  src="./chinos-pants.png" ></img>
+         <img id="iconKleid"  class="hideIcon" src="./dress.png" ></img>
+         <img id="iconShirt" class="hideIcon" src="./tshirt.png"></img>
+         <img id="iconPullover" class="hideIcon" src="./sweater.png"></img>
+         <img id="iconBluse" class="hideIcon" src="./women-blouse.png"></img>
+         <img id="iconJacke" class="hideIcon" src="./raincoat.png"></img>
+
+      </div>
       <h1 id="name">hier müsste der name stehen</h1>
     </div>
 

@@ -38,11 +38,13 @@ class Profil {
       document.getElementById("inputMarke").value = document.getElementById("marke").textContent;
       document.getElementById("inputFarbe").value = document.getElementById("farbe").textContent;
       document.getElementById("inputMaterial").value = document.getElementById("material").textContent;
-      document.getElementById("inputKategorie").value = document.getElementById("kategorie").textContent;
+      console.log(document.getElementById("kategorie").textContent);
+      document.getElementById(document.getElementById("kategorie").textContent).setAttribute('selected', true);
+
       document.getElementById("inputWasch").value = document.getElementById("pflegehinweis").textContent;
       document.getElementById("inputGroe").value = document.getElementById("größe").textContent;
-
       _app._router.navigate("/bearbeiten/" +  _id);
+
     });
 
     document.getElementById("loeschButton").addEventListener("click", () => {
@@ -72,7 +74,20 @@ let onFinishedLoading = (doc) => {
     document.getElementById("größe").textContent = doc.data().GROESSE;
     document.getElementById("pflegehinweis").textContent = doc.data().WAESCHE;
 
+    if(doc.data().KATEGORIE == "Hose"){
+    document.getElementById("iconHose").classList.remove("hideIcon");
+  }if(doc.data().KATEGORIE == "Jacke"){
+      document.getElementById("iconJacke").classList.remove("hideIcon");
+  }if(doc.data().KATEGORIE == "Pullover"){
+      document.getElementById("iconPullover").classList.remove("hideIcon");
+  }if(doc.data().KATEGORIE == "Bluse/Hemd"){
+      document.getElementById("iconBluse").classList.remove("hideIcon");
+  }if(doc.data().KATEGORIE == "Kleid"){
+      document.getElementById("iconKleid").classList.remove("hideIcon");
+  }if(doc.data().KATEGORIE == "Shirt"){
+      document.getElementById("iconShirt").classList.remove("hideIcon");
     }
+}
 
 
 export default Profil;

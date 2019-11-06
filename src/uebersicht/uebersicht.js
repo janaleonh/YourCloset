@@ -29,6 +29,7 @@ class Uebersicht {
   onLoad() {
       anzeigen();
 
+
       return;
 
   }
@@ -116,16 +117,10 @@ function anzeigen(){
             let farbe= doc.data().FARBE;
             let material= doc.data().MATERIAL;
             let kategorie= doc.data().KATEGORIE;
-
-
             einfügen(name, marke,farbe, material, kategorie, doc.id);
         });
     });
 }
-
-
-
-
 
 
 export default Uebersicht;

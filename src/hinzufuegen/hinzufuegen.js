@@ -25,8 +25,6 @@ class Hinzufuegen {
     // Anzuzeigende HTML-Elemente ermitteln
     let section = document.querySelector("#hinzufuegen").cloneNode(true);
 
-
-
     return {
         className: "hinzufuegen",
         topbar: section.querySelectorAll("header > *"),
@@ -73,8 +71,6 @@ let speichernEventListener = (event) =>
 
         if(_newClothing){
 
-
-
         console.log(kleidungNeu);
         _db.kleidungHinzufuegen(kleidungNeu).then(() => {
             //document.getElementById("inputID").value = "";
@@ -87,7 +83,9 @@ let speichernEventListener = (event) =>
             document.getElementById("inputGroe").value = "";
             _app._router.navigate("/uebersicht");
         });
+
       }else{
+
         _db.kleidungAktualisieren(_id, kleidungNeu).then(() => {
           //document.getElementById("inputID").value = "";
           document.getElementById("inputName").value = "";
@@ -112,9 +110,7 @@ let speichernEventListener = (event) =>
                   waesche = document.getElementById("inputWasch").value,
                   groesse = document.getElementById("inputGroe").value;
 
-
-                    console.log(name);
-
+                  console.log(name);
 
               if(name === ""){
                   alert("Bitte einen Namen eingeben!");
@@ -125,25 +121,19 @@ let speichernEventListener = (event) =>
               } else if(farbe === ""){
                   alert("Bitte eine Farbe eingeben!");
                   isEmpty = true;
-
               } else if(material === ""){
                  alert("Bitte ein Material eingeben!");
                  isEmpty = true;
-
              } else if(kategorie === ""){
                  alert("Bitte eine Kategorie eingeben!");
                  isEmpty = true;
-
              }  else if(waesche === ""){
                   alert("Bitte einen Pflegehinweis eingeben!");
                   isEmpty = true;
-
              }   else if(groesse === ""){
                   alert("Bitte eine Größe eingeben!");
                   isEmpty = true;
               }
-
-
 
               return isEmpty;
           }
