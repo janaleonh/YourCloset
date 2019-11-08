@@ -49,21 +49,31 @@
               </div>
 
               <div class="headerIndividuell">
-
                 <h1>Übersicht</h1>
               </div>
+
             </header>
             <main>
-
+              <div id="suchleiste" >
+                <select name="suchAspekt" id="suchAspekt" >
+                  <option value="KATEGORIE" id="kategorieSuche">Kategorie</option>
+                  <option selected value="NAME" id="nameSuche">Name</option>
+                  <option value="MARKE" id="markeSuche">Marke</option>
+                  <option value="MATERIAL" id="materialSuche">Material</option>
+                  <option value="FARBE" id="farbeSuche">Farbe</option>
+                </select>
+                <input placeholder="Suchbegriff eingeben" type="text" id="suchBegriff" name="" value="">
+                <button type="button" id="suchButton" name="suchButton">🔎</button>
+              </div>
             <div class="container">
                 <div class="uebersichtTabelle">
                     <table id="table" border="0">
                         <tr id="Tabellenhead">
-                            <th id=thID onload="">NAME</th>
-                            <th>MARKE</th>
-                            <th>FARBE</th>
-                            <th>MATERIAL</th>
-                            <th>KATEGORIE</th>
+                            <th id=nameTH onload="">NAME</th>
+                            <th id=markeTH>MARKE</th>
+                            <th id=farbeTH>FARBE</th>
+                            <th class="mobilAusblenden" id=materialTH>MATERIAL</th>
+                            <th id=kategorieTH>KATEGORIE</th>
                             <th></th>
                     </table>
                 </div>
@@ -85,23 +95,18 @@
             <div class="headerIndividuell">
               <h1>Hinzufügen</h1>
                 <a href="/uebersicht" data-navigo>
-
             </div>
           </header>
           <br />
 
           <main>
               <div class="container">
-                  <!--
-              <table id="außenrum">
-
-                  <td> -->
-
                   <table id="table2" border="1">
                       <tr>
                           <td>Name</td>
                           <td><input type="text" class="inputEingabe" id="inputName"/></td>
                           <td>Kategorie</td>
+
 
                           <td><select name="inputKategorieName" id="inputKategorie" class="inputEingabe">
                             <option value="" selected disabled hidden>Bitte wählen...</option>
@@ -109,7 +114,7 @@
                             <option value="Shirt" id="Shirt">Shirt</option>
                             <option value="Pullover" id="Pullover">Pullover</option>
                             <option value="Kleid" id="Kleid">Kleid</option>
-                            <option value="Bluse/Hemd" id="Bluse/Hemd">Bluse/Hemd</option>
+                            <option value="Bluse" id="Bluse">Bluse</option>
                             <option value="Jacke" id="Jacke">Jacke</option>
                           </select></td>
                       </tr>
@@ -131,13 +136,7 @@
                           <td>Größe</td>
                           <td><input type="text" class="inputEingabe" id="inputGroe"/></td>
                       </tr>
-
                   </table>
-                 <!-- </td>
-                   <td>
-                    <img src="" alt="+" id="Dirndl"/>
-                  </td>
-            </table> -->
 
                   <div id=speicherHinzuButtonDIV>
                     <button id="speicherHinzufuegen" >Speichern</button>
@@ -151,6 +150,8 @@
         <a href="/profil" navigo></a>
 
     <div class="headerIndividuell">
+
+      <h1 id="name">hier müsste der name stehen</h1>
       <div id="divIcon">
         <img id="iconHose" class="hideIcon"  src="./chinos-pants.png" ></img>
          <img id="iconKleid"  class="hideIcon" src="./dress.png" ></img>
@@ -160,7 +161,6 @@
          <img id="iconJacke" class="hideIcon" src="./raincoat.png"></img>
 
       </div>
-      <h1 id="name">hier müsste der name stehen</h1>
     </div>
 
     <body>

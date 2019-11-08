@@ -15,6 +15,7 @@ const firebaseConfig = {
 
 let _db = "";
 
+
 class DB {
     constructor() {
         firebase.initializeApp(firebaseConfig);
@@ -22,7 +23,7 @@ class DB {
     }
 
     selectAllKleidung(){
-        return _db.collection("kleidung").get();
+        return _db.collection("kleidung").orderBy("NAME", "asc").get();
     }
 
     kleidungHinzufuegen(kleidung){
@@ -40,6 +41,13 @@ class DB {
     kleidungAktualisieren(id, kleidung){
         return _db.collection("kleidung").doc(id).update(kleidung);
     }
+    kleidungSortierenAufsteigend(sortierParameter){
+      return _db.collection("kleidung").orderBy(sortierParameter, "asc").get();
+    }
+    kleidungDurchsuchen(suchAspekt,suchParameter){
+    return  _db.collection("kleidung").where(suchAspekt, "==", suchParameter).get();
+    }
+
 }
 
 export default DB;

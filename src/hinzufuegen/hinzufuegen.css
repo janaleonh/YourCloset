@@ -5,43 +5,29 @@
 
 h1{
   font-weight: lighter;
- /* font-size: 2vw;*/
+
 }
 
 
-#bereich{
-    /* background-color: rgba(247,205,204,0.5);
-    border: 1px grey solid;
-    width: 50vw;
-    height: 25vw;
-    margin-left: 25vw; */
-    text-align: center;
-}
 
 
 .inputEingabe{
     border-style: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    border-bottom: 1px solid #030310;
     background-color: rgba(0,0,0,0);
-}
+    font-size: 100%;
+    color: inherit;
+    font-weight: lighter;
 
-#inputNotizen{
-    background-color: rgba(247,205,204,0);
-    border-style: none;
-    width: 50vw;
-    height: 23vw;
-}
-/*
-#Dirndl{
-    width: 10vw;
-    height: 10vw;
 }
 
 
-#außenrum td{
-    padding: 15vw;
-}*/
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
 
 #table2{
     border-style: none;
@@ -49,7 +35,7 @@ h1{
     margin-left: 25vw;
     margin-top: 5vw;
     margin-bottom: 4vw;
-    /*font-size: 1.5vw;*/
+
 }
 
 #table2 td{
@@ -147,10 +133,6 @@ h1{
         height: 5vw;
     }
 
-    .hinzufuegen #bereich{
-        margin-left: 15vw;
-        width: 72vw;
-    }
 
     .inputEingabe{
         width: 20vw;
