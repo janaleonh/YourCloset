@@ -9,11 +9,11 @@ html{
 
 
 footer{
- position: fixed;
+ position: inherit;
  bottom: 0;
  background-color: rgba(240, 190, 182, 0.5);
  width: 100vw;
- height: 3vw;
+ /* height: 3vw; */
  margin-left: -0.5vw;
 }
 
