@@ -5,22 +5,26 @@
 
 h1{
   font-weight: lighter;
- /* font-size: 2vw;*/
+
 }
 
 
 .inputEingabe{
     border-style: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    border-bottom: 1px solid #030310;
     background-color: rgba(0,0,0,0);
+    font-size: 100%;
+    color: inherit;
+    font-weight: lighter;
+
 }
 
-#inputNotizen{
-    background-color: rgba(247,205,204,0);
-    border-style: none;
-    width: 50vw;
-    height: 23vw;
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
 }
 
 #table2{
@@ -29,7 +33,7 @@ h1{
     margin-left: 25vw;
     margin-top: 5vw;
     margin-bottom: 4vw;
-    /*font-size: 1.5vw;*/
+
 }
 
 #table2 td{
@@ -127,10 +131,6 @@ h1{
         height: 5vw;
     }
 
-    .hinzufuegen #bereich{
-        margin-left: 15vw;
-        width: 72vw;
-    }
 
     .inputEingabe{
         width: 20vw;

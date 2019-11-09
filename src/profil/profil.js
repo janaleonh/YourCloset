@@ -40,7 +40,6 @@ class Profil {
       document.getElementById("inputMaterial").value = document.getElementById("material").textContent;
       console.log(document.getElementById("kategorie").textContent);
       document.getElementById(document.getElementById("kategorie").textContent).setAttribute('selected', true);
-
       document.getElementById("inputWasch").value = document.getElementById("pflegehinweis").textContent;
       document.getElementById("inputGroe").value = document.getElementById("größe").textContent;
       _app._router.navigate("/bearbeiten/" +  _id);
@@ -48,8 +47,11 @@ class Profil {
     });
 
     document.getElementById("loeschButton").addEventListener("click", () => {
+      let answer = confirm("Soll der ausgewählte Eintrag gelöscht werden?");
+      if(answer === true){
       _db.kleidungLoeschen(_id).then(_app._router.navigate("/uebersicht"))
-    });
+
+    }});
 
     return;
   }

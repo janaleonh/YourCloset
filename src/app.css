@@ -4,7 +4,6 @@ html{
   font-family: sans-serif;
   font-weight: lighter;
   color: #030310;
-  color: rgb(0, 4, 66);
 
 }
 
@@ -34,24 +33,31 @@ footer{
 
 
   @media screen and (max-width: 450px) {
-
     html{
       background-image: url(background_mobil.png);
       background-size: 100%;
-      font-size: 3vw;
+      font-size: 2.5vw;
     }
-  }
+
+
   #YourCloset_Header{
     width: 50vw;
     margin-left: 25vw;
-
   }
-
-  @media screen and (max-width: 770px) {
+  .mobilAusblenden{
+    display: none;
+  }
+}
+@media screen and (max-width: 770px) {
+    html{
     background-image: url(background_mobil.png);
     background-size: 100%;
-
+    }
+#YourCloset_Header{
+  width: 50vw;
+  margin-left: 25vw;
   }
+}
 
   @media screen and (min-width:  771px) {
       html{

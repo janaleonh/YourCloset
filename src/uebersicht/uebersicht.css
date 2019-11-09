@@ -1,3 +1,35 @@
+.hoseKlasse, .shirtKlasse, .bluseKlasse,.kleidKlasse, .pulloverKlasse, .jackeKlasse {
+  background-size: 2.5vw;
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: left;
+  padding-left: 4vw;
+
+}
+#headerIndividuell{
+  float: left;
+}
+
+.hoseKlasse{
+  background-image: url(/chinos-pants.png);
+}
+.shirtKlasse{
+  background-image: url(/tshirt.png);
+}
+.bluseKlasse{
+  background-image: url(/women-blouse.png);
+}
+.kleidKlasse{
+  background-image: url(/dress.png);
+}
+.pulloverKlasse{
+  background-image: url(/sweater.png);
+}
+.jackeKlasse{
+  background-image: url(/raincoat.png);
+}
+
+
 #uebersichtHeader{
     text-align: center;
 }
@@ -16,15 +48,26 @@ table{
   margin-bottom: 3vw;
 }
 
+
 th{
     border-bottom: 2px solid rgb(245, 195, 195);
-    width: 98vw;
+
+}
+#nameTH, #markeTH, #materialTH, #kategorieTH, #farbeTH{
+background-image: url(/sort-up.png);
+background-size: 0.4vw;
+background-repeat: no-repeat;
+background-position: 85% 50%;
 }
 
 .uebersicht table{
-  background: rgba(240, 208, 212, 0.05);
+  background: rgba(240, 208, 212, 0.1);
   background-size: 100%;
   border-collapse: collapse;
+  width: 95vw;
+  margin-left: 1.5vw;
+  margin-right: 3.5vw;
+  margin-bottom: 3vw;
 }
 
 .radioSpalte{
@@ -32,10 +75,9 @@ th{
   vertical-align: middle;
 }
 
+#uebersicht.actions{
+align-items: center;
 
-.uebersicht input{
-    align-items: center;
-}
 
 #uebersicht.actions{
     align-items: center;
@@ -59,7 +101,7 @@ hr{
   border:  0.1px solid #eeeeee;
 }
 
-#hinButton{
+#hinButton, #suchButton{
   width: 6vw;
   height: 3vw;
   background-color: white;
@@ -67,4 +109,44 @@ hr{
   background-size: 105%;
   font-size: 1vw;
   border: none;
+}
+
+#suchleiste {
+    text-align: center;
+    margin-bottom: 2vw;
+
+}
+#suchAspekt{
+  background-image: url(/sort-down.png);
+  background-size: 0.4vw;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  font-size: 1vw;
+}
+#suchBegriff{
+  border: none;
+  font-weight: lighter;
+}
+
+
+@media screen and (max-width: 450px) {
+  #suchBegriff{
+    font-size: 2.5vw;
+    border-bottom: 1px solid #030310;
+  }
+  #suchAspekt{
+    font-size: 2.5vw;
+  }
+
+}
+@media screen and (max-width: 770px) {
+
+
+}
+@media screen and (min-width:  771px) {
+  #suchBegriff{
+    font-size: 1vw;
+    border-bottom: 1px solid #030310;
+  }
+
 }
