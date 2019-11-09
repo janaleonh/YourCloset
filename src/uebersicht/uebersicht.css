@@ -1,15 +1,14 @@
 #uebersichtHeader{
-text-align: center;
-
+    text-align: center;
 }
 
 .uebersicht table, th, td{
-
   height: 3vw;
   border-bottom: 0.5px solid rgb(245, 195, 195);
   font-weight: lighter;
   text-align: left;
 }
+
 table{
   width: 98vw;
   margin-left: 1vw;
@@ -27,21 +26,19 @@ th{
   background-size: 100%;
   border-collapse: collapse;
 }
-.radioSpalte{
 
+.radioSpalte{
   text-align: center; /* center checkbox horizontally */
   vertical-align: middle;
 }
 
 
-
 .uebersicht input{
-  align-items: center;
+    align-items: center;
 }
+
 #uebersicht.actions{
-align-items: center;
-
-
+    align-items: center;
 }
 
 .buttonsUebersicht{
@@ -56,7 +53,6 @@ align-items: center;
 
 h1{
   font-weight: lighter;
-
 }
 
 hr{

@@ -4,11 +4,13 @@ html{
   font-family: sans-serif;
   font-weight: lighter;
   color: #030310;
-    color: rgb(0, 4, 66);
+  color: rgb(0, 4, 66);
 
 }
+
+
 footer{
-position:fixed;
+ position: fixed;
  bottom: 0;
  background-color: rgba(240, 190, 182, 0.5);
  width: 100vw;
@@ -18,7 +20,13 @@ position:fixed;
 
 #footer{
     text-align: center;
+    /* margin-top: 1vw; */
 }
+
+#tableFooter td{
+    text-align: center;
+}
+
 
 @keyframes fadein{
 
