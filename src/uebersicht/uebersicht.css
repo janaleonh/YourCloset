@@ -6,9 +6,6 @@
   padding-left: 4vw;
 
 }
-#headerIndividuell{
-  float: left;
-}
 
 .hoseKlasse{
   background-image: url(/chinos-pants.png);
@@ -30,24 +27,19 @@
 }
 
 
-#uebersichtHeader{
-  text-align: center;
 
-}
 
 .uebersicht table, th, td{
   height: 3vw;
   border-bottom: 0.5px solid rgb(245, 195, 195);
   font-weight: lighter;
   text-align: left;
-
 }
-
 
 th{
     border-bottom: 2px solid rgb(245, 195, 195);
-
 }
+
 #nameTH, #markeTH, #materialTH, #kategorieTH, #farbeTH{
 background-image: url(/sort-up.png);
 background-size: 0.4vw;
@@ -86,9 +78,6 @@ align-items: center;
   margin-top: 0vw;
 }
 
-hr{
-  border:  0.1px solid #eeeeee;
-}
 
 #hinButton, #suchButton{
   width: 6vw;
@@ -112,10 +101,16 @@ hr{
   background-position: 85% 50%;
   font-size: 1vw;
 }
-#suchBegriff{
-  border: none;
+input{
   font-weight: lighter;
+  border-style: none;
+  transition: border-bottom-color 1s;
 }
+input:focus {
+  border-bottom-color: rgb(245, 195, 195);
+}
+
+
 
 
 @media screen and (max-width: 450px) {

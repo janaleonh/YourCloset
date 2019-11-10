@@ -3,14 +3,6 @@
   margin-top: 0vw;
 }
 
-h1{
-  font-weight: lighter;
-
-}
-
-
-
-
 .inputEingabe{
     border-style: none;
     border-bottom: 1px solid #030310;
@@ -18,34 +10,27 @@ h1{
     font-size: 100%;
     color: inherit;
     font-weight: lighter;
-
-<<<<<<< HEAD
+    transition: border-bottom-color 0.5s;
+    width: 25vw;
 }
 
+input:focus {
+  border-bottom-color: rgb(245, 195, 195);
+}
 
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   border: none;
-=======
-#inputNotizen{
-    background-color: rgba(247,205,204,0);
-    border-style: none;
-    width: 50vw;
-    height: 23vw;
->>>>>>> 1662c8a549376aa545bad6803da31580db9d9014
 }
-
 #table2{
     border-style: none;
     width: 55vw;
     margin-left: 25vw;
     margin-top: 5vw;
     margin-bottom: 4vw;
-
 }
-
 #table2 td{
     border-style: none;
 }
@@ -74,10 +59,6 @@ select {
         width: 100vw;
     }
 
-    .inputEingabe{
-        width: 25vw;
-    }
-
     #speicherHinzufuegen{
         margin-left: 0vw;
     }
@@ -86,38 +67,20 @@ select {
         text-align: center;
     }
 }
-
 @media screen and (max-width: 770px) {
     #table2{
         width: 80vw;
         margin-left: 10vw;
         margin-top: 5vw;
         margin-bottom: 2vw;
-        /*font-size: 2vw;*/
     }
-
     #table2 tr{
         height: 5vw;
     }
-
-    .hinzufuegen #bereich{
-        margin-left: 10vw;
-        width: 80vw;
-    }
-
-    .inputEingabe{
-        width: 25vw;
-    }
-
-    #speicherHinzufuegen{
-        margin-left: 0vw;
-    }
-
     #speicherHinzuButtonDIV{
         text-align: center;
     }
 }
-
 #speicherHinzufuegen{
     width: 6vw;
     height: 3vw;
@@ -126,30 +89,22 @@ select {
     background-size: 105%;
     font-size: 1vw;
     border: none;
-
 }
+
 @media screen and (min-width: 771px) {
     #table2{
         width: 80vw;
         margin-left: 15vw;
         margin-top: 5vw;
         margin-bottom: 2vw;
-        /*font-size: 2vw;*/
     }
-
     #table2 tr{
         height: 5vw;
-    }
-
-
-    .inputEingabe{
-        width: 20vw;
     }
 
     #speicherHinzufuegen{
         margin-left: 3vw;
     }
-
     #speicherHinzuButtonDIV{
         text-align: center;
     }
