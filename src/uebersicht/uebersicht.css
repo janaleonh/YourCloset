@@ -27,13 +27,22 @@
 }
 
 
-
+#uebersichtHeader{
+    text-align: center;
+}
 
 .uebersicht table, th, td{
   height: 3vw;
   border-bottom: 0.5px solid rgb(245, 195, 195);
   font-weight: lighter;
   text-align: left;
+}
+
+table{
+  width: 98vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 3vw;
 }
 
 th{
@@ -56,16 +65,18 @@ background-position: 85% 50%;
   margin-right: 3.5vw;
   margin-bottom: 3vw;
 }
-.radioSpalte{
 
+.radioSpalte{
   text-align: center; /* center checkbox horizontally */
   vertical-align: middle;
 }
 
 #uebersicht.actions{
 align-items: center;
+}
 
-
+#uebersicht.actions{
+    align-items: center;
 }
 
 .buttonsUebersicht{
@@ -100,6 +111,7 @@ align-items: center;
   background-repeat: no-repeat;
   background-position: 85% 50%;
   font-size: 1vw;
+  padding-right: 1vw;
 }
 input{
   font-weight: lighter;
