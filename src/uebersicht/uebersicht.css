@@ -8,22 +8,22 @@
 }
 
 .hoseKlasse{
-  background-image: url(/chinos-pants.png);
+  background-image: url(/images/chinos-pants.png);
 }
 .shirtKlasse{
-  background-image: url(/tshirt.png);
+  background-image: url(/images/tshirt.png);
 }
 .bluseKlasse{
-  background-image: url(/women-blouse.png);
+  background-image: url(/images/women-blouse.png);
 }
 .kleidKlasse{
-  background-image: url(/dress.png);
+  background-image: url(/images/dress.png);
 }
 .pulloverKlasse{
-  background-image: url(/sweater.png);
+  background-image: url(/images/sweater.png);
 }
 .jackeKlasse{
-  background-image: url(/raincoat.png);
+  background-image: url(/images/raincoat.png);
 }
 
 
@@ -38,22 +38,23 @@
   text-align: left;
 }
 
-table{
-  width: 98vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  margin-bottom: 3vw;
-}
 
 th{
     border-bottom: 2px solid rgb(245, 195, 195);
 }
+th:hover{
+  color: rgb(245, 195, 195);
+}
 
 #nameTH, #markeTH, #materialTH, #kategorieTH, #farbeTH{
-background-image: url(/sort-up.png);
-background-size: 0.4vw;
+background-image: url(/images/sort-up.png);
+background-size: 0.7vw;
 background-repeat: no-repeat;
 background-position: 85% 50%;
+}
+
+#nameTH:active, #markeTH:active, #materialTH:active, #kategorieTH:active, #farbeTH:active{
+background-size: 0.8vw;
 }
 
 .uebersicht table{
@@ -64,6 +65,12 @@ background-position: 85% 50%;
   margin-left: 1.5vw;
   margin-right: 3.5vw;
   margin-bottom: 3vw;
+}
+.uebersicht td:hover{
+  color: rgb(245, 195, 195);
+}
+.uebersicht td:active{
+  color: rgb(245, 171, 171);
 }
 
 .radioSpalte{
@@ -83,42 +90,35 @@ align-items: center;
   text-align: center; /* center checkbox horizontally */
 }
 
-
-.headerIndividuell{
-  text-align: center;
-  margin-top: 0vw;
-}
-
-
-#hinButton, #suchButton{
-  width: 6vw;
-  height: 3vw;
-  background-color: white;
-  background-image: url(../buttonHintergrund.png);
-  background-size: 105%;
-  font-size: 1vw;
-  border: none;
+.loeschenHover:hover{
+  font-weight: bold;
 }
 
 #suchleiste {
     text-align: center;
     margin-bottom: 2vw;
-
 }
+
 #suchAspekt{
-  background-image: url(/sort-down.png);
+  background-image: url(/images/sort-down.png);
   background-size: 0.4vw;
   background-repeat: no-repeat;
   background-position: 85% 50%;
   font-size: 1vw;
   padding-right: 1vw;
+    font-weight: lighter;
 }
-input{
+#suchAspekt:hover{
+background-size: 0.7vw;
+font-weight: bolder;
+}
+
+#suchBegriff{
   font-weight: lighter;
   border-style: none;
   transition: border-bottom-color 1s;
 }
-input:focus {
+#suchBegriff:focus {
   border-bottom-color: rgb(245, 195, 195);
 }
 

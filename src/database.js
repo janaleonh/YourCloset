@@ -42,7 +42,13 @@ class DB {
         return _db.collection("kleidung").doc(id).update(kleidung);
     }
     kleidungSortierenAufsteigend(sortierParameter){
+
+      console.log(sortierParameter);
       return _db.collection("kleidung").orderBy(sortierParameter, "asc").get();
+    }
+    kleidungSortierenAbsteigend(sortierParameter){
+
+      return _db.collection("kleidung").orderBy(sortierParameter, "desc").get();
     }
     kleidungDurchsuchen(suchAspekt,suchParameter){
     return  _db.collection("kleidung").where(suchAspekt, "==", suchParameter).get();

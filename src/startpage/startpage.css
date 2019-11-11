@@ -21,8 +21,7 @@
 }
 
 #uebersichtButton{
-  background-color: white;
-  background-image: url(../buttonHintergrund.png);
+
   background-size: 99%;
   border: none;
   width: 5vw;

@@ -1,5 +1,5 @@
-#iconKategorie{
 
+#iconKategorie{
   width: 5vw;
   height: 5vw;
   margin-left: 47.5vw;
@@ -24,7 +24,7 @@ margin-top: 1vw;
 .meta-data-box{
     color: rgb(0, 4, 66);
     background-color:rgba(250, 230, 227, 0.3);
-    border: solid  1px rgb(245, 195, 195,0.3);
+
     height: 10em;
     float: left;
     width:28vw;
@@ -34,10 +34,12 @@ margin-top: 1vw;
   margin-left: 15vw;
   margin-right: 4vw;
   padding: 1vw;
+  box-shadow:  0px 0px 40px 40px rgba(250, 230, 227, 0.5);
 }
 #box2{
   margin-left: 4vw;
   margin-right: 15vw;
+  box-shadow:  0px 0px 40px 40px rgba(250, 230, 227, 0.5);
   padding: 1vw;
 }
 
@@ -49,15 +51,6 @@ margin-top: 1vw;
 .buttons{
   text-align: center;
   margin-top: 3vw;
-}
-
-#loeschButton, #bearbButton{
-    background-image: url(../buttonHintergrund.png);
-    background-size: 100%;
-    background-color: white;
-    border: none;
-    width: 6vw;
-    height: 3vw;
 }
 
 #iconHose, #iconShirt,#iconJacke,#iconKleid,#iconPullover, #iconBluse{

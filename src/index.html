@@ -11,7 +11,7 @@
       <section id=app>
         <header>
           <div class="logo">
-            <a  href="/uebersicht" navigo><img src="YourCloset_Header.png" alt="" id="YourCloset_Header">  </a>
+            <a  href="/uebersicht" navigo><img src="./images/YourCloset_Header.png" alt="" id="YourCloset_Header">  </a>
 
         </header>
         <main>
@@ -29,7 +29,6 @@
           </div>
           <div class="startText">
             Starte jetzt und erstelle deinen virtuellen Kleiderschrank...
-
           </div>
 
 
@@ -39,7 +38,7 @@
 
 
         </main>
-        <footer></footer>
+
       </section>
 
       <section id="uebersicht" class="hidden">
@@ -62,7 +61,7 @@
                   <option value="MATERIAL" id="materialSuche">Material</option>
                   <option value="FARBE" id="farbeSuche">Farbe</option>
                 </select>
-                <input placeholder="Suchbegriff eingeben" type="text" id="suchBegriff" name="" value="">
+                <input required placeholder="Suchbegriff eingeben" type="text" id="suchBegriff" name="" value="">
                 <button type="button" id="suchButton" name="suchButton">🔎</button>
               </div>
             <div class="container">
@@ -81,10 +80,8 @@
                 <div class="buttonsUebersicht">
                     <a  href="/hinzufuegen" navigo> <button id="hinButton">🖊️</button></a>
                 </div>
-
             </div>
             </main>
-
 
           </section>
       </section>
@@ -96,19 +93,19 @@
               <h1>Hinzufügen</h1>
                 <a href="/uebersicht" data-navigo>
             </div>
+
           </header>
           <br />
-
           <main>
               <div class="container">
+
                   <table id="table2" border="1">
                       <tr>
                           <td>Name</td>
-                          <td><input type="text" class="inputEingabe" id="inputName"/></td>
+                          <td><input required type="text" class="inputEingabe" id="inputName"/></td>
                           <td>Kategorie</td>
 
-
-                          <td><select name="inputKategorieName" id="inputKategorie" class="inputEingabe">
+                          <td><select required name="inputKategorieName" id="inputKategorie" class="inputEingabe">
                             <option value="" selected disabled hidden>Bitte wählen...</option>
                             <option value="Hose" id="Hose">Hose</option>
                             <option value="Shirt" id="Shirt">Shirt</option>
@@ -120,26 +117,26 @@
                       </tr>
                       <tr>
                         <td>Farbe</td>
-                        <td><input type="text" class="inputEingabe" id="inputFarbe"/></td>
+                        <td><input required type="text" class="inputEingabe" id="inputFarbe"/></td>
 
                         <td>Material</td>
-                        <td><input type="text" class="inputEingabe" id="inputMaterial"/></td>
+                        <td><input required type="text" class="inputEingabe" id="inputMaterial"/></td>
                       </tr>
                       <tr>
                         <td>Marke</td>
-                        <td><input type="text" class="inputEingabe" id="inputMarke"/></td>
+                        <td><input required type="text" class="inputEingabe" id="inputMarke"/></td>
 
                           <td>Pflegehinweis</td>
-                          <td><input type="text" class="inputEingabe" id="inputWasch"/></td>
+                          <td><input required type="text" class="inputEingabe" id="inputWasch"/></td>
                       </tr>
                       <tr>
                           <td>Größe</td>
-                          <td><input type="text" class="inputEingabe" id="inputGroe"/></td>
+                          <td><input required type="text" class="inputEingabe" id="inputGroe"/></td>
                       </tr>
                   </table>
 
                   <div id=speicherHinzuButtonDIV>
-                    <button id="speicherHinzufuegen">Speichern</button>
+                    <button id="speicherHinzufuegen">💾</button>
                   </div>
               </div>
           </main>
@@ -153,12 +150,12 @@
 
       <h1 id="name">hier müsste der name stehen</h1>
       <div id="divIcon">
-        <img id="iconHose" class="hideIcon"  src="./chinos-pants.png" ></img>
-         <img id="iconKleid"  class="hideIcon" src="./dress.png" ></img>
-         <img id="iconShirt" class="hideIcon" src="./tshirt.png"></img>
-         <img id="iconPullover" class="hideIcon" src="./sweater.png"></img>
-         <img id="iconBluse" class="hideIcon" src="./women-blouse.png"></img>
-         <img id="iconJacke" class="hideIcon" src="./raincoat.png"></img>
+        <img id="iconHose" class="hideIcon"  src="./images/chinos-pants.png" ></img>
+         <img id="iconKleid"  class="hideIcon" src="./images/dress.png" ></img>
+         <img id="iconShirt" class="hideIcon" src="./images/tshirt.png"></img>
+         <img id="iconPullover" class="hideIcon" src="./images/sweater.png"></img>
+         <img id="iconBluse" class="hideIcon" src="./images/women-blouse.png"></img>
+         <img id="iconJacke" class="hideIcon" src="./images/raincoat.png"></img>
 
       </div>
     </div>
@@ -189,28 +186,10 @@
     </div>
 
       <div class="buttons">
-        <button id="bearbButton">Bearbeiten</button>
-        <button id="loeschButton">Löschen</button>
+        <button id="bearbButton">🖊️</button>
+        <button id="loeschButton">🗑️</button>
       </div>
     </body>
       </section>
 </body>
-<footer>
-    <div id="footer">YourCloset-Impresum</div>
-    <div>
-        <table>
-            <tr>
-                <td>
-                    Jana
-                </td>
-                <td>
-                    Stefanie
-                </td>
-                <td>
-                    Jasmin
-                </td>
-            </tr>
-        </table>
-    </div>
-</footer>
 </html>
