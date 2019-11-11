@@ -3,7 +3,7 @@ html{
   animation: fadein 0.9s  both;
   font-family: sans-serif;
   font-weight: lighter;
-  color: #030310;
+  color: #000442;
   font-size: 1em;
 }
 
@@ -21,8 +21,8 @@ background-size: 102%;
 font-size: 102%
 }
 
-input:focus,  {
-  border-bottom-color: solid #030310;
+input:focus  {
+  border-bottom-color: solid #000442;
 }
 
 input:valid, select:valid{

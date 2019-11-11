@@ -116,10 +116,9 @@ font-weight: bolder;
 #suchBegriff{
   font-weight: lighter;
   border-style: none;
-  transition: border-bottom-color 1s;
 }
-#suchBegriff:focus {
-  border-bottom-color: rgb(245, 195, 195);
+#suchBegriff:valid{
+  border-bottom: 1px solid  rgb(245, 195, 195);
 }
 
 
@@ -128,7 +127,7 @@ font-weight: bolder;
 @media screen and (max-width: 450px) {
   #suchBegriff{
     font-size: 2.5vw;
-    border-bottom: 1px solid #030310;
+    border-bottom: 1px solid #000442;
   }
   #suchAspekt{
     font-size: 2.5vw;
@@ -142,7 +141,7 @@ font-weight: bolder;
 @media screen and (min-width:  771px) {
   #suchBegriff{
     font-size: 1vw;
-    border-bottom: 1px solid #030310;
+    border-bottom: 1px solid #000442
   }
 
 }
