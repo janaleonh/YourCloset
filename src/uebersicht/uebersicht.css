@@ -116,6 +116,7 @@ font-weight: bolder;
 #suchBegriff{
   font-weight: lighter;
   border-style: none;
+  font-size: 1vw;
 }
 #suchBegriff:valid{
   border-bottom: 1px solid  rgb(245, 195, 195);
@@ -128,19 +129,22 @@ font-weight: bolder;
   #suchBegriff{
     font-size: 2.5vw;
     border-bottom: 1px solid #000442;
+    margin-bottom: 3vw;
   }
   #suchAspekt{
     font-size: 2.5vw;
+  }
+  .uebersicht td, th{
+    height: 6vw;
   }
 
 }
 @media screen and (max-width: 770px) {
 
-
 }
 @media screen and (min-width:  771px) {
   #suchBegriff{
-    font-size: 1vw;
+
     border-bottom: 1px solid #000442
   }
 

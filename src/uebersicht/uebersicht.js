@@ -62,6 +62,7 @@ function einfügen (name, marke, farbe, material, kategorie, id){
   let tdName = document.createElement("td");
   let tdMarke = document.createElement("td");
   let tdFarbe = document.createElement("td");
+  tdFarbe.classList.add("mobilAusblenden");
   let tdMaterial = document.createElement("td");
   tdMaterial.classList.add("mobilAusblenden");
   let tdKategorie = document.createElement("td");

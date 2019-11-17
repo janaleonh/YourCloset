@@ -34,11 +34,11 @@ class Profil {
 
   onLoad() {
     document.getElementById("bearbButton").addEventListener("click", () => {
+      document.getElementById("h1").innerHTML = document.getElementById("name").textContent;
       document.getElementById("inputName").value = document.getElementById("name").textContent;
       document.getElementById("inputMarke").value = document.getElementById("marke").textContent;
       document.getElementById("inputFarbe").value = document.getElementById("farbe").textContent;
       document.getElementById("inputMaterial").value = document.getElementById("material").textContent;
-      console.log(document.getElementById("kategorie").textContent);
       document.getElementById(document.getElementById("kategorie").textContent).setAttribute('selected', true);
       document.getElementById("inputWasch").value = document.getElementById("pflegehinweis").textContent;
       document.getElementById("inputGroe").value = document.getElementById("größe").textContent;

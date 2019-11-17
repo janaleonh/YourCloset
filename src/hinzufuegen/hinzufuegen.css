@@ -2,13 +2,10 @@
   text-align: center;
   margin-top: 0vw;
 }
-h1{
-  font-weight: lighter;
 
-}
 .inputEingabe{
     border-style: none;
-    border-bottom: 1px solid #000442
+    border-bottom: 1px solid #000442;
     background-color: rgba(0,0,0,0);
     font-size: 100%;
     color: inherit;
@@ -34,7 +31,6 @@ h1{
 }
 
 #speicherHinzufuegen{
-    margin-left: 25vw;
     margin-top: 3vw;
     margin-bottom: 3vw;
 }
