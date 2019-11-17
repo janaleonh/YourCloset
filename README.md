@@ -1,4 +1,4 @@
-# Your Closet 
+# Your Closet
 ## Kurzbeschreibung
 Dies ist eine Browser App, die ohne einen Server im Hintergrund komplett im Browser läuft. Es handelt sich dabei um eine so genannte Single Page App, da die App nur einmal durch Aufrufen der HTML-Datei gestartet und dann bis zum Verlassen der App nicht wieder neugeladen wird.
 
@@ -10,11 +10,11 @@ Die App nutzt den Node Package Manager npm als Paketverwaltung. Auf diese Weise 
 
 Folgende Entwicklungswerkzeuge kommen stattdessen zum Einsatz:
 Atom: Spezieller Texteditor für Webentwickler und Programmierer
-Visual Studio Code: Quelltexteditor für Webentwickler und Programmierer 
+Visual Studio Code: Quelltexteditor für Webentwickler und Programmierer
 git: Versionsverwaltung zur gemeinsamen Arbeit am Quellcode
 npm: Paketverwaltung zum automatischen Download abhängiger Bibliotheken
 Parcel: Web Application Bundler und Entwicklungsserver
 
 Zusätzlich werden folgende Bibliotheken genutzt:
 Navigo: Single Page Router zur Vereinfachung der Navigation innerhalb der App
-firebase: eine Realtime Datenbank 
+Firebase:  Realtime Datenbank

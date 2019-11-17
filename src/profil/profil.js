@@ -82,7 +82,7 @@ let onFinishedLoading = (doc) => {
       document.getElementById("iconJacke").classList.remove("hideIcon");
   }if(doc.data().KATEGORIE == "Pullover"){
       document.getElementById("iconPullover").classList.remove("hideIcon");
-  }if(doc.data().KATEGORIE == "Bluse/Hemd"){
+  }if(doc.data().KATEGORIE == "Bluse"){
       document.getElementById("iconBluse").classList.remove("hideIcon");
   }if(doc.data().KATEGORIE == "Kleid"){
       document.getElementById("iconKleid").classList.remove("hideIcon");

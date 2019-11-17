@@ -9,6 +9,15 @@ html{
 h1{
   font-weight: 100;
 }
+
+hr{
+background: linear-gradient(to right, transparent, rgb(253, 216, 215), transparent);
+border: none;
+height: 1px;
+width: 100%;
+
+}
+
 button{
   width: 6vw;
   height: 3vw;
