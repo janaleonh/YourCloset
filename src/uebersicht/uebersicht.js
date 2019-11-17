@@ -76,6 +76,7 @@ function einfügen (name, marke, farbe, material, kategorie, id){
   tdMaterial.innerHTML  = material;
   tdKategorie.innerHTML = kategorie;
 
+//Hinzufügen der zugehörigen Klasse (abhängig von Kategorie), um richtiges Icon anzeigen zu können
   if(kategorie=="Hose"){
     tdKategorie.classList.add("hoseKlasse");
   }if (kategorie== "Shirt"){
@@ -134,7 +135,7 @@ function einfügen (name, marke, farbe, material, kategorie, id){
 
 
 }
-
+//Anzeigen aller Kleidungsstücke
 function anzeigen(){
   _db.kleidungSortierenAufsteigend("KATEGORIE").then(function (querySnapshot){
     querySnapshot.forEach(function (doc){
@@ -148,14 +149,13 @@ function anzeigen(){
   });
 }
 
+//Sortieren der Kleidungsstücke, je nachdem welche th geclickt wurde
 let sortEventListener = (event) =>{
 //Sortieren nach Name
   if (event.target == document.getElementById("nameTH")){
     tabLoeschen();
     if(_name == true){
       _name = false;
-
-      console.log("nachTabLoeschen in if");
       _db.kleidungSortierenAufsteigend("NAME").then(function (querySnapshot){
         querySnapshot.forEach(function (doc){
           let name= doc.data().NAME;
@@ -323,6 +323,7 @@ let sortEventListener = (event) =>{
   }
 }
 
+//Überprüfen ob Suchfeld leer ist
 function emptySuche(){
   let sucheEmpty = false;
   if(document.getElementById("suchBegriff").value == ""){
@@ -338,6 +339,7 @@ function emptySuche(){
   return sucheEmpty;
 }
 
+//Löschen der Tabelle
 function tabLoeschen() {
   var rowCount = document.getElementById("table").rows.length;
   var element = document.getElementById("table");

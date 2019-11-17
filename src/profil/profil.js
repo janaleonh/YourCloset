@@ -33,6 +33,7 @@ class Profil {
     }
 
   onLoad() {
+    //Übertragung der Daten zum Bearbeiten
     document.getElementById("bearbButton").addEventListener("click", () => {
       document.getElementById("h1").innerHTML = document.getElementById("name").textContent;
       document.getElementById("inputName").value = document.getElementById("name").textContent;
@@ -66,8 +67,6 @@ class Profil {
 }
 
 let onFinishedLoading = (doc) => {
-    console.log("Finished loading!");
-    console.log("Finished loading!");
     document.getElementById("name").textContent = doc.data().NAME;
     document.getElementById("kategorie").textContent = doc.data().KATEGORIE;
     document.getElementById("farbe").textContent = doc.data().FARBE;
@@ -76,6 +75,7 @@ let onFinishedLoading = (doc) => {
     document.getElementById("größe").textContent = doc.data().GROESSE;
     document.getElementById("pflegehinweis").textContent = doc.data().WAESCHE;
 
+// Kategorie auslesen und Klasse hinzufügen, um später passendes Icon hinzufügen zu können
     if(doc.data().KATEGORIE == "Hose"){
     document.getElementById("iconHose").classList.remove("hideIcon");
   }if(doc.data().KATEGORIE == "Jacke"){

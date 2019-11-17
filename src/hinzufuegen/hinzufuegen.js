@@ -72,6 +72,7 @@ let speichernEventListener = (event) =>
 
         if(_newClothing){
 
+        //Neues Kleidungsstück hinzufügen
         console.log(kleidungNeu);
         _db.kleidungHinzufuegen(kleidungNeu).then(() => {
             //document.getElementById("inputID").value = "";
@@ -87,6 +88,7 @@ let speichernEventListener = (event) =>
 
       }else{
 
+        //Vorhandenes Kleidungsstück bearbeiten (Übertragung von Profil an Seite zum Bearbeiten)
         _db.kleidungAktualisieren(_id, kleidungNeu).then(() => {
           //document.getElementById("inputID").value = "";
           document.getElementById("inputName").value = "";
@@ -101,6 +103,8 @@ let speichernEventListener = (event) =>
       }
     }
   }
+
+  //Überprüfung, ob Eingaben leer sind
   function checkEmptyInput(){
               var isEmpty = false,
                   name = document.getElementById("inputName").value,
